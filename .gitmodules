@@ -1,0 +1,3 @@
+[submodule "plugins/itamae-plugin-resource-cask"]
+	path = plugins/itamae-plugin-resource-cask
+	url = https://github.com/k0kubun/itamae-plugin-resource-cask.git
