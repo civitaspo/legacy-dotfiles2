@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'neovim/neovim'
@@ -18,16 +19,33 @@ brew 'libtool'
 brew 'libuv'
 brew 'libvterm'
 brew 'libyaml'
+brew 'mas'
 brew 'msgpack'
 brew 'pcre'
 brew 'pcre2'
 brew 'pkg-config'
 brew 'reattach-to-user-namespace'
+brew 'xz'
+brew 'the_silver_searcher'
 brew 'tmux'
 brew 'unibilium'
 brew 'zsh'
 brew 'neovim/neovim/neovim'
+cask 'contexts'
 cask 'google-chrome'
 cask 'google-japanese-ime'
 cask 'hammerspoon'
+cask 'iterm2'
+cask 'java'
+cask 'java7'
 cask 'karabiner-elements'
+cask 'teensy'
+cask 'vivaldi'
+mas 'Numbers', id: 409203825
+mas 'Timing', id: 431511738
+mas 'GarageBand', id: 682658836
+mas 'iMovie', id: 408981434
+mas 'Pages', id: 409201541
+mas 'Keynote', id: 409183694
+mas 'Slack', id: 803453959
+mas 'Tweetbot', id: 557168941
