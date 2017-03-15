@@ -95,9 +95,9 @@ if [[ $UID == 0 ]]; then
 fi
 
 # fzf - command-line fuzzy finder (https://github.com/junegunn/fzf)
-export FZF_DEFAULT_OPTS="--extended --ansi --multi"
+export FZF_DEFAULT_OPTS="--reverse --extended --ansi --multi"
 
 # available $INTERACTIVE_FILTER
-export INTERACTIVE_FILTER="fzf:peco"
+export INTERACTIVE_FILTER="fzf-tmux:fzf:peco"
 
 [[ -f ~/.secret ]] && source ~/.secret

@@ -46,17 +46,17 @@ if has 'git'; then
     alias gc='git commit'
     alias gco='git checkout'
     alias gb='git branch'
-    if has 'fzf'; then
+    if has 'fzf-tmux'; then
         fzf_local_branches() {
             local branches branch
             branches=$(git branch -a) &&
-            branch=$(echo "$branches" | fzf +m) &&
+            branch=$(echo "$branches" | fzf-tmux +m) &&
             echo "$branch" | awk '{print $1}' | sed "s/.* //"
         }
         fzf_remotes() {
             local remotes remote
             remotes=$(git remote) &&
-            remote=$(echo "$remotes" | fzf +m) &&
+            remote=$(echo "$remotes" | fzf-tmux +m) &&
             echo "$remote"
         }
         alias push='git push $(fzf_remotes) $(fzf_local_branches)'
@@ -82,7 +82,7 @@ if has 'git'; then
         fshow() {
           git log --graph --color=always \
               --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
-          fzf --ansi --no-sort --reverse --tiebreak=index --toggle-sort=\` \
+          fzf-tmux --ansi --no-sort --reverse --tiebreak=index --toggle-sort=\` \
               --bind "ctrl-m:execute:
                         echo '{}' | grep -o '[a-f0-9]\{7\}' | head -1 |
                         xargs -I % sh -c 'git show --color=always % | less -R'"
