@@ -51,7 +51,7 @@ if has 'git'; then
             local branches branch
             branches=$(git branch -a) &&
             branch=$(echo "$branches" | fzf-tmux +m) &&
-            echo "$branch" | awk '{print $1}' | sed "s/.* //"
+            echo "$branch" | sed "s/.* //"
         }
         fzf_remotes() {
             local remotes remote
