@@ -11,12 +11,22 @@ repo = 'tpope/vim-endwise'
 on_ft = 'ruby'
 
 [[plugins]]
+repo = 'fishbullet/deoplete-ruby'
+on_ft = 'ruby'
+on_source = 'deoplete.nvim'
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
-on_cmd = 'Denite'
+on_event = 'BufRead'
 hook_source = 'source ~/.config/nvim/plugins/denite.rc.vim'
 
 [[plugins]]
 repo = 'Shougo/neoyank.vim'
 on_if = 1
 on_event = 'TextYankPost'
-on_source = ['denite.nvim']
+on_source = 'denite.nvim'
+
+[[plugins]]
+repo = 'osyo-manga/vim-over'
+on_event = 'OverCommandLine'
+hook_add = 'source ~/.config/nvim/plugins/vim-over.rc.vim'

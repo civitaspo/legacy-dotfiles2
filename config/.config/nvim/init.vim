@@ -34,8 +34,6 @@ endif
 " }}}
 
 let g:python3_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
-let g:deoplete#enable_at_startup = 1
-
 
 syntax on
 set hlsearch
