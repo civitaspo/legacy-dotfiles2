@@ -39,6 +39,7 @@ include_cookbook 'tmux'
 include_cookbook 'pyenv'
 include_cookbook 'neovim'
 include_cookbook 'iterm2'
+include_cookbook 'sbin'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
