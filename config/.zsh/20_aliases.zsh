@@ -17,7 +17,13 @@ alias mkdir='mkdir -p'
 alias ssh='TERM=xterm ssh -A -C -o CompressionLevel=9'
 alias tmux='tmux -u'
 alias sudo='sudo '
-alias vi="vim"
+
+if has 'nvim'; then
+    alias vim='nvim'
+    alias vi='nvim'
+else
+    alias vi='vim'
+fi
 
 # Use if colordiff exists
 if has 'colordiff'; then
