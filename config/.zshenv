@@ -98,6 +98,6 @@ fi
 export FZF_DEFAULT_OPTS="--extended --ansi --multi"
 
 # available $INTERACTIVE_FILTER
-export INTERACTIVE_FILTER="fzf:peco"
+export INTERACTIVE_FILTER="fzf-tmux:fzf:peco"
 
 [[ -f ~/.secret ]] && source ~/.secret
