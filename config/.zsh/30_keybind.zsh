@@ -40,7 +40,9 @@ bindkey '^s' fzf_ssh
 frepo() {
     local dir
     dir=$(ghq list > /dev/null | fzf-tmux --reverse +m) &&
-      cd $(ghq root)/$dir
+      \cd $(ghq root)/$dir
+#    zle reset-prompt
+    zle accept-line
 }
 zle -N frepo
 bindkey '^g' frepo

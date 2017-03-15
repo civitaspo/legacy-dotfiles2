@@ -2,12 +2,15 @@
 typeset -gx -U path
 path=( \
     ~/bin(N-/) \
+    ~/sbin(N-/) \
     ~/.rbenv/bin(N-/) \
     ~/.rbenv/shims(N-/) \
     ~/.goenv/bin(N-/) \
     ~/.goenv/shims(N-/) \
     ~/.pyenv/bin(N-/) \
     ~/.pyenv/shims(N-/) \
+    ~/.jenv/bin(N-/) \
+    ~/.jenv/shims(N-/) \
     ~/.zplug/bin(N-/) \
     ~/.tmux/bin(N-/) \
     /usr/local/bin(N-/) \
@@ -38,7 +41,7 @@ export LC_ALL="${LANGUAGE}"
 export LC_CTYPE="${LANGUAGE}"
 
 # Editor
-export EDITOR=vim
+export EDITOR=nvim
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"

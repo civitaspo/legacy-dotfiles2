@@ -1,6 +1,7 @@
 ZPLUG_PROTOCOL=ssh
 
 zplug "zplug/zplug", hook-build:'zplug --self-manage'
+zplug "~/.zsh", from:local, use:"<->_*.zsh"
 
 zplug "zsh-users/zsh-completions"
 zplug "zsh-users/zsh-syntax-highlighting", defer:2
@@ -8,11 +9,9 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "yonchu/zsh-vcs-prompt", use:zshrc.sh
 
 zplug "b4b4r07/enhancd", use:init.sh
-
-# require sqlite3 packages?
 zplug 'b4b4r07/zsh-history', \
-    defer:3, \
     if:"which go", \
+    defer:3, \
     use:init.zsh, \
     hook-build:"
         go get -d

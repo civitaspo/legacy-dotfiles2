@@ -13,7 +13,3 @@ if [[ -f ~/.zplug/init.zsh ]]; then
     zplug load
 fi
 
-for f in ~/.zsh/*.zsh
-do
-    source $f
-done
