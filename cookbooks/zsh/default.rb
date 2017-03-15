@@ -16,7 +16,6 @@ dotfile '.zlogout'
 dotfile '.zsh'
 
 execute "chsh -s /usr/local/bin/zsh #{node[:user]}" do
-  only_if "echo $SHELL | grep /usr/local/bin/zsh"
-  user 'root'
+  not_if "echo $SHELL | grep /usr/local/bin/zsh"
 end
 
