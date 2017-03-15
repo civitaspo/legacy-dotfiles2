@@ -7,6 +7,7 @@ node.reverse_merge!(
     global: '2.4.0',
     versions: %w[
       2.4.0
+      jruby-9.1.8.0
     ],
   },
   goenv: {
@@ -28,6 +29,13 @@ node.reverse_merge!(
         neovim
       ],
     },
+  },
+  jenv: {
+    global: '1.8.0.121',
+    version_map: {
+      '1.8.0.121' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_121.jdk/Contents/Home',
+      '1.7.0.80'  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home',
+    },
   }
 )
 include_recipe "rbenv::user"
@@ -37,6 +45,7 @@ include_cookbook 'google-japanese-ime'
 include_cookbook 'zsh'
 include_cookbook 'tmux'
 include_cookbook 'pyenv'
+include_cookbook 'jenv'
 include_cookbook 'neovim'
 include_cookbook 'iterm2'
 include_cookbook 'sbin'
