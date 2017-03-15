@@ -33,7 +33,7 @@ local function remapCommonHotkeys()
   remapKey({'ctrl'}, 'n', keyCode('down'))
   remapKey({'ctrl'}, 'p', keyCode('up'))
   remapKey({'ctrl'}, 'h', keyCode('delete'))
-  remapKey({'ctrl'}, 'd', keyCode('forwarddelete'))
+  -- remapKey({'ctrl'}, 'd', keyCode('forwarddelete'))
 end
 
 local function remapDvorakKey()
