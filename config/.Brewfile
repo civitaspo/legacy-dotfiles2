@@ -1,4 +1,5 @@
 tap 'caskroom/cask'
+tap 'caskroom/fonts'
 tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
@@ -31,7 +32,12 @@ brew 'tmux'
 brew 'unibilium'
 brew 'zsh'
 brew 'neovim/neovim/neovim'
+cask 'alfred'
+cask 'bartender'
+cask 'clipy'
 cask 'contexts'
+cask 'flux'
+cask 'font-hermit-nerd-font-mono'
 cask 'google-chrome'
 cask 'google-japanese-ime'
 cask 'hammerspoon'
@@ -39,6 +45,7 @@ cask 'iterm2'
 cask 'java'
 cask 'java7'
 cask 'karabiner-elements'
+cask 'slack'
 cask 'teensy'
 cask 'vivaldi'
 mas 'Numbers', id: 409203825
@@ -47,5 +54,5 @@ mas 'GarageBand', id: 682658836
 mas 'iMovie', id: 408981434
 mas 'Pages', id: 409201541
 mas 'Keynote', id: 409183694
-mas 'Slack', id: 803453959
+mas 'LINE', id: 539883307
 mas 'Tweetbot', id: 557168941
