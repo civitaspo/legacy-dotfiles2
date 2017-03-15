@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-mitamae_version="1.3.2"
+mitamae_version="1.4.2"
 mitamae_cache="mitamae-${mitamae_version}"
 setup_root_dir=$(cd $(dirname $0)/..; pwd)
 
@@ -16,7 +16,7 @@ setup_root_dir=$(cd $(dirname $0)/..; pwd)
         ;;
       "Darwin")
         mitamae_bin="mitamae-x86_64-darwin"
-        mitamae_sha256="1775a7600e3c2464f9a33f62505c11b5691df9b0ecd36840fb587bb9bc04b295"
+        mitamae_sha256="ed9ad07dd05873ec04bbdc5e4c37cf1b7785a3c2f2b80a223c04cc1c8c2c53e5"
         ;;
       *)
         echo "unexpected uname: $(uname)"

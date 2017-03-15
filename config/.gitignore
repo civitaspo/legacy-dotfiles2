@@ -1,0 +1,11 @@
+.DS_Store
+.bundle
+db/*.sqlite3
+log/*.log
+tmp/
+*~
+.vagrant
+.bundle
+dump.rdb
+.idea
+*.iml

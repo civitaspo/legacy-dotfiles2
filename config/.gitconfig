@@ -1,0 +1,29 @@
+[user]
+	name = Civitaspo
+	email = civitaspo@gmail.com
+[core]
+	excludesfile = ~/.gitignore
+	pager = less
+	autocrlf = false
+        filemode = true
+[push]
+	default = simple
+[color]
+	ui = true
+[ghq]
+	root = ~/src
+[branch]
+	autosetuprebase = always
+[merge]
+	# from 1.7.6
+	ff = false
+[pull]
+	# from 1.7.9
+	rebase = true
+[init]
+	templatedir = ~/.git-template
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
