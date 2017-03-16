@@ -31,17 +31,25 @@ has_widgets() {
 fzf_ssh() {
     local hosts host
     hosts=$(grep "Host " ~/.ssh/config | grep -v '*' | cut -b 6-) &&
-    host=$(echo "$hosts" | fzf +m)
-    ssh $host
+    host=$(echo "$hosts" | fzf-tmux)
+    if [[ -z "$host" ]]; then
+        return
+    fi
+    if zle; then
+      BUFFER="ssh $host"
+      CURSOR=$#BUFFER
+      zle clear-screen
+    else
+      print -z "ssh $host"
+    fi
 }
 zle -N fzf_ssh
 bindkey '^s' fzf_ssh
 
 frepo() {
     local dir
-    dir=$(ghq list > /dev/null | fzf-tmux --reverse +m) &&
+    dir=$(ghq list > /dev/null | fzf-tmux +m) &&
       \cd $(ghq root)/$dir
-#    zle reset-prompt
     zle accept-line
 }
 zle -N frepo
