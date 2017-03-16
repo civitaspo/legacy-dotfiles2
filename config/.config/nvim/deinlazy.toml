@@ -7,10 +7,6 @@ if = "has('nvim')"
 hook_source = 'source ~/.config/nvim/plugins/deoplete.rc.vim'
 
 [[plugins]]
-repo = 'tpope/vim-endwise'
-on_ft = 'ruby'
-
-[[plugins]]
 repo = 'fishbullet/deoplete-ruby'
 on_ft = 'ruby'
 on_source = 'deoplete.nvim'

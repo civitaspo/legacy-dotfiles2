@@ -4,3 +4,6 @@ repo = 'Shougo/dein.vim'
 [[plugins]] # colorscheme
 repo = 'w0ng/vim-hybrid'
 hook_add = 'source ~/.config/nvim/plugins/vim-hybrid.rc.vim'
+
+[[plugins]]
+repo = 'tpope/vim-endwise'
