@@ -4,6 +4,7 @@ tap 'caskroom/versions'
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'neovim/neovim'
+tap 'shogogg/cask-atok'
 brew 'autoconf'
 brew 'automake'
 brew 'cmake'
@@ -33,10 +34,12 @@ brew 'unibilium'
 brew 'zsh'
 brew 'neovim/neovim/neovim'
 cask 'alfred'
+cask 'atok-passport'
 cask 'bartender'
 cask 'clipy'
 cask 'contexts'
 cask 'flux'
+cask 'font-hermit'
 cask 'font-hermit-nerd-font-mono'
 cask 'google-chrome'
 cask 'google-japanese-ime'
@@ -44,6 +47,7 @@ cask 'hammerspoon'
 cask 'iterm2'
 cask 'java'
 cask 'java7'
+cask 'jetbrains-toolbox'
 cask 'karabiner-elements'
 cask 'slack'
 cask 'teensy'
@@ -53,6 +57,8 @@ mas 'Timing', id: 431511738
 mas 'GarageBand', id: 682658836
 mas 'iMovie', id: 408981434
 mas 'Pages', id: 409201541
+mas 'PopClip', id: 445189367
 mas 'Keynote', id: 409183694
 mas 'LINE', id: 539883307
+mas 'Display Menu', id: 549083868
 mas 'Tweetbot', id: 557168941
