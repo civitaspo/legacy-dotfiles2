@@ -7,6 +7,7 @@ node.reverse_merge!(
     global: '2.4.0',
     versions: %w[
       2.4.0
+      2.3.0
       jruby-9.1.8.0
     ],
   },
@@ -30,6 +31,9 @@ node.reverse_merge!(
       ],
     },
   },
+  ndenv: {
+    # TODO:
+  },
   jenv: {
     global: '1.8.0.121',
     version_map: {
@@ -45,6 +49,7 @@ include_cookbook 'google-japanese-ime'
 include_cookbook 'zsh'
 include_cookbook 'tmux'
 include_cookbook 'pyenv'
+include_cookbook 'ndenv'
 include_cookbook 'jenv'
 include_cookbook 'neovim'
 include_cookbook 'iterm2'

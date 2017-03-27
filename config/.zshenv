@@ -9,6 +9,8 @@ path=( \
     ~/.goenv/shims(N-/) \
     ~/.pyenv/bin(N-/) \
     ~/.pyenv/shims(N-/) \
+    ~/.ndenv/bin(N-/) \
+    ~/.ndenv/shims(N-/) \
     ~/.jenv/bin(N-/) \
     ~/.jenv/shims(N-/) \
     ~/.zplug/bin(N-/) \

@@ -18,6 +18,9 @@ if has 'pyenv'; then
   eval "$(pyenv init -)"
   eval "$(pyenv virtualenv-init -)"
 fi
+if has 'ndenv'; then
+  eval "$(ndenv init -)"
+fi
 if has 'jenv'; then
   eval "$(jenv init -)"
 fi
