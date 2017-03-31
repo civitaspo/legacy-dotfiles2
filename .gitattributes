@@ -1,8 +1,5 @@
 config/.zsh/history/backup/*/*/*.db filter=lfs diff=lfs merge=lfs -text
 config/.config/atok/dic/*.dic filter=lfs diff=lfs merge=lfs -text
 config/.config/atok/dic/*.DIC filter=lfs diff=lfs merge=lfs -text
-src/fonts/uni/uni.ttf filter=lfs diff=lfs merge=lfs -text
-src/fonts/telegrama/telegrama_raw.otf filter=lfs diff=lfs merge=lfs -text
-src/fonts/telegrama/telegrama_raw_osn.otf filter=lfs diff=lfs merge=lfs -text
-src/fonts/telegrama/telegrama_render.otf filter=lfs diff=lfs merge=lfs -text
-src/fonts/telegrama/telegrama_render_osn.otf filter=lfs diff=lfs merge=lfs -text
+src/fonts/*/*.otf filter=lfs diff=lfs merge=lfs -text
+src/fonts/*/*.ttf filter=lfs diff=lfs merge=lfs -text
