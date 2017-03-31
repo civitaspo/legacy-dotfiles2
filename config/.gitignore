@@ -11,3 +11,4 @@ dump.rdb
 *.iml
 .ruby-version
 Gemfile*.lock
+.java-version
