@@ -9,3 +9,5 @@ tmp/
 dump.rdb
 .idea
 *.iml
+.ruby-version
+Gemfile*.lock
