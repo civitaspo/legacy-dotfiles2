@@ -5,6 +5,7 @@ tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'neovim/neovim'
 tap 'shogogg/cask-atok'
+cask 'java'
 brew 'autoconf'
 brew 'automake'
 brew 'awscli'
@@ -15,6 +16,7 @@ brew 'git'
 brew 'docker'
 brew 'gdbm'
 brew 'gettext'
+brew 'gradle'
 brew 'htop'
 brew 'jemalloc'
 brew 'openssl'
@@ -36,6 +38,7 @@ brew 'reattach-to-user-namespace'
 brew 'redis'
 brew 'xz'
 brew 'the_silver_searcher'
+brew 'tig'
 brew 'tmux'
 brew 'unibilium'
 brew 'w3m'
@@ -54,7 +57,6 @@ cask 'google-chrome'
 cask 'google-japanese-ime'
 cask 'hammerspoon'
 cask 'iterm2'
-cask 'java'
 cask 'java7'
 cask 'jetbrains-toolbox'
 cask 'karabiner-elements'
@@ -62,14 +64,15 @@ cask 'kindle'
 cask 'slack'
 cask 'teensy'
 cask 'vivaldi'
-mas 'Tweetbot', id: 557168941
-mas 'Timing', id: 431511738
-mas 'GarageBand', id: 682658836
-mas 'iMovie', id: 408981434
-mas 'Pages', id: 409201541
-mas 'PopClip', id: 445189367
 mas 'Keynote', id: 409183694
-mas 'LINE', id: 539883307
-mas 'Display Menu', id: 549083868
+mas 'iMovie', id: 408981434
 mas 'OmniPlan', id: 1040002810
+mas 'Quiver', id: 866773894
+mas 'Tweetbot', id: 557168941
+mas 'Display Menu', id: 549083868
+mas 'Pages', id: 409201541
+mas 'LINE', id: 539883307
+mas 'GarageBand', id: 682658836
 mas 'Numbers', id: 409203825
+mas 'Timing', id: 431511738
+mas 'PopClip', id: 445189367
