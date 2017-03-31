@@ -53,6 +53,7 @@ include_cookbook 'ndenv'
 include_cookbook 'jenv'
 include_cookbook 'neovim'
 include_cookbook 'iterm2'
+include_cookbook 'tig'
 include_cookbook 'sbin'
 include_cookbook 'bin'
 
