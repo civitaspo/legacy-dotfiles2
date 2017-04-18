@@ -444,7 +444,7 @@
 	<key>LoadPrefsFromCustomFolder</key>
 	<true/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 13</string>
+	<string>1, 0</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~/src/github.com/mbadolato/iTerm2-Color-Schemes/schemes</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -481,13 +481,13 @@
 	<key>NSTableView Supports v2 KeyBingingTable</key>
 	<true/>
 	<key>NSWindow Frame NSFontPanel</key>
-	<string>2959 565 445 77 1920 150 1680 1050 </string>
+	<string>1039 281 445 77 0 0 1680 1050 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>1685 -557 620 392 1155 -1050 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>623 198 918 498 0 0 1680 1050 </string>
+	<string>623 110 918 495 0 0 1680 1050 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1155 -1034 1673 1034 1155 -1050 1680 1050 </string>
+	<string>-1107 1267 1335 826 -1111 1050 1920 1200 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>1346 -921 585 452 1155 -1050 1680 1050 </string>
 	<key>New Bookmarks</key>
@@ -1062,11 +1062,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>Monaco 12</string>
+			<string>S2G-Uni-font 12</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>HurmitNerdFontCM-medium 12</string>
+			<string>Telegrama-Render 12</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1122,7 +1122,7 @@
 			<key>Use Italic Font</key>
 			<true/>
 			<key>Use Non-ASCII Font</key>
-			<false/>
+			<true/>
 			<key>Vertical Spacing</key>
 			<real>1</real>
 			<key>Visual Bell</key>
@@ -1193,7 +1193,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-03-28T05:51:09Z</date>
+	<date>2017-03-31T20:39:31Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>WordCharacters</key>
@@ -1203,7 +1203,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.0.14</string>
+	<string>3.0.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
