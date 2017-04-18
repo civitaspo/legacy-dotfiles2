@@ -12,3 +12,4 @@ dump.rdb
 .ruby-version
 Gemfile*.lock
 .java-version
+/vendor/
