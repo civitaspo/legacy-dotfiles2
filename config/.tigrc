@@ -6,7 +6,7 @@ set ignore-space = all
 set split-view-width = 75%
 set mouse = true
 set diff-options = -m --first-parent # show merge commit diff
-set main-view = id:yes date:local author:full commit-title:graph=yes,refs=yes
+set main-view = id:yes date author:full commit-title:graph=yes,refs=yes
 set diff-highlight = true # require diff-highlight in PATH
 bind status V !git commit -v
 
