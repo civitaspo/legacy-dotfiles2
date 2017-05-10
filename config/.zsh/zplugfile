@@ -9,3 +9,6 @@ zplug "zsh-users/zsh-syntax-highlighting", defer:2
 zplug "yonchu/zsh-vcs-prompt", use:zshrc.sh
 
 zplug "b4b4r07/enhancd", use:init.sh
+
+# http://qiita.com/greymd/items/8744d1c4b0b2b3004147
+zplug "greymd/tmux-xpanes"
