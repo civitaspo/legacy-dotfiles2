@@ -14,7 +14,7 @@ node.reverse_merge!(
   goenv: {
     global: '1.8.1',
     versions: %w[
-      1.7.4,
+      1.7.4
       1.8.1
     ], 
   },
