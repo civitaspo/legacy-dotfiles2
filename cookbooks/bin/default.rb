@@ -71,4 +71,18 @@ github_binary 'git-lfs' do
   binary_path 'git-lfs-2.0.1/git-lfs'
 end
 
-
+github_binary 'jq' do
+  version     'jq-1.5'
+  repository  'stedolan/jq'
+  case node[:platform]
+  when 'darwin'
+    archive     'jq-osx-amd64'
+    binary_path 'jq-osx-amd64'
+  when 'ubuntu'
+    archive     'jq-linux64'
+    binary_path 'jq-linux64'
+  else
+    raise 'not supported now'
+  end
+  extract     false
+end
