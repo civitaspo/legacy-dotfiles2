@@ -22,14 +22,19 @@ node.reverse_merge!(
     global: '3.5.2',
     versions: %w[
       3.5.2
+      2.7.10
     ],
     virtualenv: {
-      :'3.5.2' => 'neovim3',
+      :'3.5.2'  => 'neovim3',
+      :'2.7.10' => 'vcli',
     },
     pip: {
       neovim3: %w[
         neovim
       ],
+      vcli: %w[
+        vcli
+      ]
     },
   },
   ndenv: {
