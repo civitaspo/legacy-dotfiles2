@@ -69,3 +69,13 @@ dotfile '.hammerspoon'
 dotfile '.config/karabiner'
 dotfile '.doc'
 dotfile '.pryrc'
+
+# keyrepeat
+execute "defaults write -g InitialKeyRepeat -int 15" do
+  not_if "$(defaults read -g InitialKeyRepeat) -eq 15"
+end
+
+execute "defaults write -g KeyRepeat -int 1" do
+  not_if "$(defaults read -g KeyRepeat) -eq 1"
+end
+
