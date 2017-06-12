@@ -51,8 +51,6 @@ cask "bettertouchtool"
 cask "clipy"
 cask "contexts"
 cask "flux"
-cask "font-hermit"
-cask "font-hermit-nerd-font-mono"
 cask "google-chrome"
 cask "google-drive"
 cask "google-japanese-ime"
@@ -65,7 +63,6 @@ cask "kindle"
 cask "slack"
 cask "teensy"
 cask "things"
-cask "vivaldi"
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
@@ -73,7 +70,6 @@ mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "MindNode", id: 992076693
 mas "Numbers", id: 409203825
-mas "OmniOutliner", id: 1142578772
 mas "OmniPlan", id: 1040002810
 mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
