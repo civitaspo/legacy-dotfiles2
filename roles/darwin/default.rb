@@ -27,6 +27,7 @@ node.reverse_merge!(
     virtualenv: {
       :'3.5.2'  => 'neovim3',
       :'2.7.10' => 'vcli',
+      :'2.7.10' => 'google-cloud-sdk',
     },
     pip: {
       neovim3: %w[
@@ -46,6 +47,11 @@ node.reverse_merge!(
       '1.8.0.131' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home',
       '1.7.0.80'  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home',
     },
+  },
+  :"google-cloud-sdk" => {
+    versions: %w[
+      158.0.0
+    ]
   }
 )
 include_recipe "rbenv::user"
@@ -57,6 +63,7 @@ include_cookbook 'tmux'
 include_cookbook 'pyenv'
 include_cookbook 'ndenv'
 include_cookbook 'jenv'
+include_cookbook 'google-cloud-sdk'
 include_cookbook 'neovim'
 include_cookbook 'iterm2'
 include_cookbook 'tig'
