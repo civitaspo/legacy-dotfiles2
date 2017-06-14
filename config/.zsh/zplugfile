@@ -10,5 +10,16 @@ zplug "yonchu/zsh-vcs-prompt", use:zshrc.sh
 
 zplug "b4b4r07/enhancd", use:init.sh
 
+# http://www.tellme.tokyo/entry/2017/06/13/233305
+zplug "b4b4r07/history", \
+  if:"which go", \
+  hook-build:"
+      go get -d
+      go build -o zhist main.go
+      install -m 0755 zhist ~/bin
+  "
+  #TODO: use:misc/zsh/init.zsh, \
+
 # http://qiita.com/greymd/items/8744d1c4b0b2b3004147
 zplug "greymd/tmux-xpanes"
+
