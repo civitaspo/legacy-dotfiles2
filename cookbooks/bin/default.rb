@@ -16,6 +16,14 @@ execute "chmod 755 #{embulk_bin}" do
   not_if "test -x #{embulk_bin}"
 end
 
+digdag_bin = File.join(ENV['HOME'], 'bin', 'digdag')
+execute "curl -fSL -o #{embulk_bin} https://dl.digdag.io/digdag-latest" do
+  not_if "test -x #{digdag_bin}"
+end
+execute "chmod 755 #{digdag_bin}" do
+  not_if "test -x #{digdag_bin}"
+end
+
 # github binaries
 github_binary 'fzf' do
   version    '0.16.5'
