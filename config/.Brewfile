@@ -56,13 +56,11 @@ cask "google-drive"
 cask "google-japanese-ime"
 cask "hammerspoon"
 cask "iterm2"
-cask "java7"
 cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "kindle"
 cask "slack"
 cask "teensy"
-cask "things"
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
