@@ -45,7 +45,6 @@ node.reverse_merge!(
     global: '1.8.0.131',
     version_map: {
       '1.8.0.131' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home',
-      '1.7.0.80'  => '/Library/Java/JavaVirtualMachines/jdk1.7.0_80.jdk/Contents/Home',
     },
   },
   :"google-cloud-sdk" => {
