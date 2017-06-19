@@ -74,6 +74,7 @@ include_cookbook 'bin'
 # installed by `brew cask`
 dotfile '.hammerspoon'
 dotfile '.config/karabiner'
+dotfile '.config/atok'
 dotfile '.doc'
 dotfile '.pryrc'
 
