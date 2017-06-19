@@ -35,6 +35,7 @@ link "current" do
   cwd "#{ENV['HOME']}/opt/google-cloud-sdk/"
   to current_google_cloud_sdk_package_name
   force true
+  not_if "[ \"$(readlink current)\" == \"#{current_google_cloud_sdk_package_name}\" ]"
 end
 
 # Here is depended on python2
