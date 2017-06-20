@@ -3,3 +3,5 @@ config/.config/atok/dic/*.dic filter=lfs diff=lfs merge=lfs -text
 config/.config/atok/dic/*.DIC filter=lfs diff=lfs merge=lfs -text
 src/fonts/*/*.otf filter=lfs diff=lfs merge=lfs -text
 src/fonts/*/*.ttf filter=lfs diff=lfs merge=lfs -text
+src/intellij-idea/settings.jar filter=lfs diff=lfs merge=lfs -text
+src/rubymine/settings.jar filter=lfs diff=lfs merge=lfs -text
