@@ -29,6 +29,8 @@ brew "libyaml"
 brew "mas"
 brew "msgpack"
 brew "mysql"
+brew "unibilium"
+brew "neovim"
 brew "pcre"
 brew "pcre2"
 brew "pkg-config"
@@ -39,10 +41,9 @@ brew "xz"
 brew "the_silver_searcher"
 brew "tig"
 brew "tmux"
-brew "unibilium"
 brew "w3m"
+brew "wget"
 brew "zsh"
-brew "neovim/neovim/neovim"
 cask "alfred"
 cask "apache-directory-studio"
 cask "atok-passport"
@@ -62,11 +63,15 @@ cask "teensy"
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "MindNode", id: 992076693
+mas "Numbers", id: 409203825
 mas "OmniPlan", id: 1040002810
 mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
 mas "Quiver", id: 866773894
 mas "Timing", id: 431511738
+mas "Todoist", id: 585829637
 mas "Tweetbot", id: 557168941
+mas "YubiKey Personalization Tool", id: 638161122
