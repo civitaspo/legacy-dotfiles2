@@ -1,6 +1,6 @@
 #!/bin/bash -eux
 
-APP_ROOT="$(cd $(dirname $0); pwd)"
+APP_ROOT="$(cd $(dirname $0)/..; pwd)"
 
 (
     cd $APP_ROOT
