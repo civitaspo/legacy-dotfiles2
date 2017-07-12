@@ -153,7 +153,7 @@
                 "f9": "fastforward"
             },
             "name": "Dvorak",
-            "selected": false,
+            "selected": true,
             "simple_modifications": {
                 "a": "a",
                 "b": "x",

@@ -1,0 +1,4 @@
+[filter "gitignore"]
+	smudge = cat
+	clean = sed 's/\"selected\": false/\"selected\": true/g'
+
