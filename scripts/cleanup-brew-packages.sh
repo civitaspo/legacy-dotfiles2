@@ -1,3 +1,3 @@
 #!/bin/bash -eux
 
-brew bundle cleanup --global
+brew bundle cleanup --force --global
