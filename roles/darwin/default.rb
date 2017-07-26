@@ -28,6 +28,7 @@ node.reverse_merge!(
       :'3.5.2'  => 'neovim3',
       :'2.7.10' => 'vcli',
       :'2.7.10' => 'google-cloud-sdk',
+      :'2.7.10' => 'jenkins-job-builder',
     },
     pip: {
       neovim3: %w[
@@ -35,6 +36,9 @@ node.reverse_merge!(
       ],
       vcli: %w[
         vcli
+      ],
+      :'jenkins-job-builder' => %w[
+        jenkins-job-builder
       ]
     },
   },
