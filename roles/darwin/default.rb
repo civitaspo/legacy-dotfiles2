@@ -76,7 +76,6 @@ include_cookbook 'bin'
 # packages which require only dotfiles.
 # installed by `brew cask`
 dotfile '.config/karabiner'
-dotfile '.config/atok'
 dotfile '.doc'
 dotfile '.pryrc'
 
