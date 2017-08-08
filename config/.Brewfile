@@ -64,6 +64,7 @@ cask "kindle"
 cask "slack"
 cask "teensy"
 cask "vagrant"
+cask "zazu"
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434

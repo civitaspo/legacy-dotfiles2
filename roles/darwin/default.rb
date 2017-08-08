@@ -78,6 +78,7 @@ include_cookbook 'bin'
 dotfile '.config/karabiner'
 dotfile '.doc'
 dotfile '.pryrc'
+dotfile '.zazurc.json'
 
 # keyrepeat
 execute "defaults write -g InitialKeyRepeat -int 15" do
