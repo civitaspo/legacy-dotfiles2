@@ -4,3 +4,6 @@
 [submodule "plugins/itamae-plugin-recipe-goenv"]
 	path = plugins/itamae-plugin-recipe-goenv
 	url = https://github.com/civitaspo/itamae-plugin-recipe-goenv.git
+[submodule ".secfiles"]
+	path = .secfiles
+	url = git@github.com:civitaspo/.secfiles.git
