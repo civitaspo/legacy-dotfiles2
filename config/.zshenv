@@ -104,4 +104,4 @@ export FZF_DEFAULT_OPTS="--reverse --extended --ansi --multi"
 # available $INTERACTIVE_FILTER
 export INTERACTIVE_FILTER="fzf-tmux:fzf:peco"
 
-[[ -f ~/.secret ]] && source ~/.secret
+[[ -f ~/.secret-env.sh ]] && source ~/.secret-env.sh
