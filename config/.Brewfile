@@ -62,10 +62,12 @@ cask "iterm2"
 cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "kindle"
+cask "skype"
 cask "slack"
 cask "teensy"
 cask "totalspaces"
 cask "vagrant"
+cask "virtualbox"
 cask "zazu"
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
