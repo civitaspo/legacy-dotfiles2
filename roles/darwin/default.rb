@@ -80,6 +80,7 @@ dotfile '.doc'
 dotfile '.pryrc'
 dotfile '.zazurc.json'
 dotfile '.secret-env.sh'
+dotfile '.hammerspoon'
 
 # keyrepeat
 execute "defaults write -g InitialKeyRepeat -int 15" do
