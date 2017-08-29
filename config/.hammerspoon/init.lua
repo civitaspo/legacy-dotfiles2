@@ -11,9 +11,11 @@ do
       hs.reload()
     end
   end
-  local pathWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
+  -- Use Global Variables for preventing GC
+  pathWatcher = hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig)
   pathWatcher:start()
 end
+
 
 --
 -- ContinuousWriting Support
@@ -53,7 +55,7 @@ do
       eventtap:stop()
     end
   end
-  caffeinateWatcher = hs.caffeinate.watcher.new(function(eventType)
+  local function conditionalSwitchContinuousWriting(eventType)
     if eventType == hs.caffeinate.watcher.screensaverDidStart then
       print("-- stopContinuousWriting: hs.caffeinate.watcher.screensaverDidStart")
       stopNonStopWriting()
@@ -84,8 +86,10 @@ do
     else
       print("-- Do nothing about ContinuousWriting: " .. eventType)
     end
-  end)
+  end
   startContinuousWriting()
+  -- Use Global Variables for preventing GC
+  caffeinateWatcher = hs.caffeinate.watcher.new(conditionalSwitchContinuousWriting)
   caffeinateWatcher:start()
 end
 
