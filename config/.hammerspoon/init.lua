@@ -35,10 +35,12 @@ do
       hs.notify.show("Hammerspoon", "No Key Stroke Event", "During " .. noStrokeSconds .." seconds"):send()
     end
   end)
+
   local eventtap = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event)
     isStroked = true
     return false
   end)
+
   local function startContinuousWriting()
     if not timer:running() then
       timer:start()
@@ -47,6 +49,7 @@ do
       eventtap:start()
     end
   end
+
   local function stopContinuousWriting()
     if timer:running() then
       timer:stop()
@@ -55,6 +58,7 @@ do
       eventtap:stop()
     end
   end
+
   local function conditionalSwitchContinuousWriting(eventType)
     if eventType == hs.caffeinate.watcher.screensaverDidStart then
       print("-- stopContinuousWriting: hs.caffeinate.watcher.screensaverDidStart")
@@ -87,7 +91,9 @@ do
       print("-- Do nothing about ContinuousWriting: " .. eventType)
     end
   end
+
   startContinuousWriting()
+
   -- Use Global Variables for preventing GC
   caffeinateWatcher = hs.caffeinate.watcher.new(conditionalSwitchContinuousWriting)
   caffeinateWatcher:start()
