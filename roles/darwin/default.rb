@@ -53,7 +53,7 @@ node.reverse_merge!(
   },
   :"google-cloud-sdk" => {
     versions: %w[
-      158.0.0
+      169.0.0
     ]
   }
 )
