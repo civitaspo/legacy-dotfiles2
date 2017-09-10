@@ -12,10 +12,10 @@ node.reverse_merge!(
     ],
   },
   goenv: {
-    global: '1.8.1',
+    global: '1.9.0',
     versions: %w[
-      1.7.4
       1.8.1
+      1.9.0
     ], 
   },
   pyenv: { # not implemented
