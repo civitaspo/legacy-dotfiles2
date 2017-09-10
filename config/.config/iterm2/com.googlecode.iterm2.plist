@@ -481,11 +481,11 @@
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>269 139 606 456 0 0 2048 1280 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>381 160 1016 502 0 0 2048 1280 </string>
+	<string>381 135 918 498 0 0 2048 1280 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>3 250 1450 911 0 0 2048 1280 </string>
+	<string>274 174 1106 898 0 0 2048 1280 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>-3116 -629 1195 1039 -3120 -634 1200 1920 </string>
+	<string>9 170 1946 859 0 0 2048 1280 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>254 60 665 352 0 0 2048 1280 </string>
 	<key>New Bookmarks</key>
@@ -1110,7 +1110,7 @@
 			<key>Terminal Type</key>
 			<string>xterm-256color</string>
 			<key>Transparency</key>
-			<real>0.21310096153846153</real>
+			<real>0.12061298076923077</real>
 			<key>Unlimited Scrollback</key>
 			<true/>
 			<key>Use Bold Font</key>
@@ -1199,7 +1199,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2017-08-07T02:31:28Z</date>
+	<date>2017-09-09T00:09:04Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
