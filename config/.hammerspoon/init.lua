@@ -23,16 +23,17 @@ end
 --
 
 do
-  local noStrokeSconds = 0
+  local noStrokeSeconds = 0
   local noStrokeCheckInterval = 30
   local isStroked = true
   local timer = hs.timer.doEvery(noStrokeCheckInterval, function()
     if isStroked then
-      noStrokeSconds = 0
+      noStrokeSeconds = 0
       isStroked = false
     else
-      noStrokeSconds = noStrokeSconds + noStrokeCheckInterval
-      hs.notify.show("Hammerspoon", "No Key Stroke Event", "During " .. noStrokeSconds .." seconds"):send()
+      noStrokeSeconds = noStrokeSeconds + noStrokeCheckInterval
+      local noStrokeMins = noStrokeSeconds / 60
+      hs.notify.show("Hammerspoon", "No Key Stroke Event", "During " .. noStrokeMins .." mins"):send()
     end
   end)
 
