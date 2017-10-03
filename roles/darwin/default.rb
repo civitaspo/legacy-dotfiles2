@@ -4,11 +4,9 @@ include_cookbook 'homebrew' # install packages from .Brewfile
 # install first because install some go products 
 node.reverse_merge!(
   rbenv: {
-    global: '2.4.0',
+    global: '2.4.1',
     versions: %w[
-      2.4.0
-      2.3.0
-      jruby-9.1.8.0
+      2.4.1
     ],
   },
   goenv: {
@@ -46,9 +44,9 @@ node.reverse_merge!(
     # TODO:
   },
   jenv: {
-    global: '1.8.0.131',
+    global: '9',
     version_map: {
-      '1.8.0.131' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_131.jdk/Contents/Home',
+      '9' => '/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home',
     },
   },
   :"google-cloud-sdk" => {
