@@ -47,6 +47,7 @@ node.reverse_merge!(
     global: '9',
     version_map: {
       '9' => '/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home',
+      '1.8' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home'
     },
   },
   :"google-cloud-sdk" => {
