@@ -7,3 +7,6 @@
 [submodule ".secfiles"]
 	path = .secfiles
 	url = git@github.com:civitaspo/.secfiles.git
+[submodule "plugins/itamae-plugin-recipe-scalaenv"]
+	path = plugins/itamae-plugin-recipe-scalaenv
+	url = https://github.com/civitaspo/itamae-plugin-recipe-scalaenv.git

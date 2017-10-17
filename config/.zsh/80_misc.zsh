@@ -24,6 +24,9 @@ fi
 if has 'jenv'; then
   eval "$(jenv init -)"
 fi
+if has 'scalaenv'; then
+  eval "$(scalaenv init -)"
+fi
 if has $HOME/.pyenv/versions/google-cloud-sdk/bin/python2; then
   export CLOUDSDK_PYTHON=$(readlink "$HOME/.pyenv/versions/google-cloud-sdk/bin/python2")
 fi

@@ -13,6 +13,8 @@ path=( \
     ~/.ndenv/shims(N-/) \
     ~/.jenv/bin(N-/) \
     ~/.jenv/shims(N-/) \
+    ~/.scalaenv/bin(N-/) \
+    ~/.scalaenv/shims(N-/) \
     ~/opt/google-cloud-sdk/current/bin(N-/) \
     ~/.zplug/bin(N-/) \
     ~/.tmux/bin(N-/) \

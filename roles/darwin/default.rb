@@ -50,6 +50,13 @@ node.reverse_merge!(
       '1.8' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home'
     },
   },
+  scalaenv: {
+    global: 'scala-2.11.8',
+    versions: %w[
+      scala-2.11.8
+      scala-2.12.3
+    ],
+  },
   :"google-cloud-sdk" => {
     versions: %w[
       169.0.0
@@ -58,6 +65,7 @@ node.reverse_merge!(
 )
 include_recipe "rbenv::user"
 include_recipe "goenv::user"
+include_recipe "scalaenv::user"
 
 include_cookbook 'google-japanese-ime'
 include_cookbook 'zsh'
