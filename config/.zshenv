@@ -15,6 +15,8 @@ path=( \
     ~/.jenv/shims(N-/) \
     ~/.scalaenv/bin(N-/) \
     ~/.scalaenv/shims(N-/) \
+    ~/.sbtenv/bin(N-/) \
+    ~/.sbtenv/shims(N-/) \
     ~/opt/google-cloud-sdk/current/bin(N-/) \
     ~/.zplug/bin(N-/) \
     ~/.tmux/bin(N-/) \

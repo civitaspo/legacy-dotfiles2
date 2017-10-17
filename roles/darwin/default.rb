@@ -57,15 +57,23 @@ node.reverse_merge!(
       scala-2.12.3
     ],
   },
+  sbtenv: {
+    global: 'sbt-0.13.15',
+    versions: %w[
+      sbt-0.13.15
+      sbt-0.12.4
+    ],
+  },
   :"google-cloud-sdk" => {
     versions: %w[
       169.0.0
     ]
-  }
+  },
 )
 include_recipe "rbenv::user"
 include_recipe "goenv::user"
 include_recipe "scalaenv::user"
+include_recipe "sbtenv::user"
 
 include_cookbook 'google-japanese-ime'
 include_cookbook 'zsh'
