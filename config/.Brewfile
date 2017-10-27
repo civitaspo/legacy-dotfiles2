@@ -85,4 +85,5 @@ mas "Quiver", id: 866773894
 mas "Timing", id: 431511738
 mas "Todoist", id: 585829637
 mas "Tomato One", id: 907364780
+mas "Trello", id: 1278508951
 mas "Tweetbot", id: 557168941
