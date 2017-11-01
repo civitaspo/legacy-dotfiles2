@@ -2,7 +2,7 @@
     "title": "Emacs Mode",
     "rules": [
         {
-            "description": "Change Left_control P/N/B/F to Arrow Keys",
+            "description": "Change Left_control P/N/B/F to Arrow Keys In Google Chrome",
             "manipulators": [
                 {
                     "from": {
@@ -19,6 +19,14 @@
                     "to": [
                         {
                             "key_code": "left_arrow"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.apple.Safari"
+                            ]
                         }
                     ],
                     "type": "basic"
@@ -40,6 +48,14 @@
                             "key_code": "down_arrow"
                         }
                     ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.apple.Safari"
+                            ]
+                        }
+                    ],
                     "type": "basic"
                 },
                 {
@@ -59,6 +75,14 @@
                             "key_code": "up_arrow"
                         }
                     ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.apple.Safari"
+                            ]
+                        }
+                    ],
                     "type": "basic"
                 },
                 {
@@ -76,6 +100,14 @@
                     "to": [
                         {
                             "key_code": "right_arrow"
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_if",
+                            "bundle_identifiers": [
+                                "^com.apple.Safari"
+                            ]
                         }
                     ],
                     "type": "basic"
