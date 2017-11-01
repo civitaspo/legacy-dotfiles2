@@ -25,7 +25,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\.google\.Chrome"
+                                "^com.google.Chrome"
                             ]
                         }
                     ],
@@ -52,7 +52,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\.google\.Chrome"
+                                "^com.google.Chrome"
                             ]
                         }
                     ],
@@ -79,7 +79,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\.google\.Chrome"
+                                "^com.google.Chrome"
                             ]
                         }
                     ],
@@ -106,7 +106,7 @@
                         {
                             "type": "frontmost_application_if",
                             "bundle_identifiers": [
-                                "^com\.google\.Chrome"
+                                "^com.google.Chrome"
                             ]
                         }
                     ],
