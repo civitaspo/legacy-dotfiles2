@@ -50,6 +50,7 @@ brew "w3m"
 brew "wget"
 brew "zsh"
 cask "1password"
+cask "1password-cli"
 cask "alfred"
 cask "bartender"
 cask "clipy"
@@ -78,4 +79,5 @@ mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
+mas "SonicWall Mobile Connect", id: 822514576
 mas "Tweetbot", id: 557168941
