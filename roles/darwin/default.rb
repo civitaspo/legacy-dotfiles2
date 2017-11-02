@@ -47,7 +47,7 @@ node.reverse_merge!(
     global: '1.8',
     version_map: {
       '9' => '/Library/Java/JavaVirtualMachines/jdk-9.jdk/Contents/Home',
-      '1.8' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home'
+      '1.8' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_152.jdk/Contents/Home'
     },
   },
   scalaenv: {
@@ -61,7 +61,6 @@ node.reverse_merge!(
     global: 'sbt-0.13.15',
     versions: %w[
       sbt-0.13.15
-      sbt-0.12.4
     ],
   },
   :"google-cloud-sdk" => {
