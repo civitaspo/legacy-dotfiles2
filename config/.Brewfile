@@ -69,21 +69,13 @@ cask "teensy"
 cask "totalspaces"
 cask "vagrant"
 cask "virtualbox"
-cask "zazu"
 cask "caskroom/versions/java8"
 mas "Display Menu", id: 549083868
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
-mas "MindNode", id: 992076693
 mas "Numbers", id: 409203825
-mas "OmniPlan", id: 1040002810
 mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
-mas "Quiver", id: 866773894
-mas "Timing", id: 431511738
-mas "Todoist", id: 585829637
-mas "Tomato One", id: 907364780
-mas "Trello", id: 1278508951
 mas "Tweetbot", id: 557168941
