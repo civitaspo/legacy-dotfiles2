@@ -9,4 +9,5 @@ set diff-options = -m --first-parent # show merge commit diff
 set main-view = id:yes date author:full commit-title:graph=yes,refs=yes
 set diff-highlight = true # require diff-highlight in PATH
 bind status V !git commit -v
-
+bind main   B !git rebase -i %(commit)
+bind diff   B !git rebase -i %(commit)
