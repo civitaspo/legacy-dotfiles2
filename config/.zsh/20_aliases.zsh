@@ -14,7 +14,7 @@ alias rm='rm -iv'
 alias cp='cp -iv'
 alias mv='mv -iv'
 alias mkdir='mkdir -p'
-alias ssh='TERM=xterm ssh -A -C -o CompressionLevel=9'
+alias ssh='TERM=xterm ssh -A -C'
 alias tmux='tmux -u'
 alias sudo='sudo '
 
