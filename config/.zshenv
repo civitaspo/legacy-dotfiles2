@@ -21,6 +21,7 @@ path=( \
     ~/.zplug/bin(N-/) \
     ~/.tmux/bin(N-/) \
     /usr/local/bin(N-/) \
+    /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
     "$path[@]" \
     )
