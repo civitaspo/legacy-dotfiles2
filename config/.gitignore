@@ -15,4 +15,4 @@ Gemfile.lock
 .java-version
 vendor/
 workspace
-
+/.gtm/
