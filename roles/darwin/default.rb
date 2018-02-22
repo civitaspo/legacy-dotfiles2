@@ -84,6 +84,7 @@ include_cookbook 'google-cloud-sdk'
 include_cookbook 'neovim'
 include_cookbook 'iterm2'
 include_cookbook 'tig'
+include_cookbook 'scripts'
 include_cookbook 'sbin'
 include_cookbook 'bin'
 
