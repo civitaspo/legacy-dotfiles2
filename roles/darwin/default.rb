@@ -4,9 +4,9 @@ include_cookbook 'homebrew' # install packages from .Brewfile
 # install first because install some go products 
 node.reverse_merge!(
   rbenv: {
-    global: '2.4.1',
+    global: '2.5.0',
     versions: %w[
-      2.4.1
+      2.5.0
     ],
   },
   goenv: {
