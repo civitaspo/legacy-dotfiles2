@@ -58,25 +58,30 @@ filetype on
 filetype indent on
 filetype plugin on
 
-au BufNewFile,BufRead *.sql    set tabstop=2 shiftwidth=2
-au BufNewFile,BufRead *.js     set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.json   set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.coffee set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.scss   set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead Gemfile  set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.watchr set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.rb     set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.rake   set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.yaml   set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.yml    set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.erb    set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.dig    set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.pl     set tabstop=4 shiftwidth=4 expandtab
-au BufNewFile,BufRead *.pm     set tabstop=4 shiftwidth=4 expandtab
-au BufNewFile,BufRead *.t      set tabstop=4 shiftwidth=4 expandtab
-au BufNewFile,BufRead *.go     set tabstop=4 shiftwidth=4 expandtab
-au BufNewFile,BufRead *.psgi   set tabstop=4 shiftwidth=4 expandtab
-au BufNewFile,BufRead *.sh     set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.sql       set tabstop=2 shiftwidth=2
+au BufNewFile,BufRead *.js        set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.json      set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.coffee    set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.scss      set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead Gemfile     set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead Groupfile.* set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead IAMfile.*   set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead Alarmfile.* set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead Rulefile.*  set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead Routefile.* set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.watchr    set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.rb        set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.rake      set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.yaml      set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.yml       set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.erb       set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.dig       set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.pl        set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.pm        set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.t         set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.go        set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.psgi      set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead *.sh        set tabstop=4 shiftwidth=4 expandtab
 
 nmap <C-c> :q<CR>
 nmap <C-x> :wq<CR>
