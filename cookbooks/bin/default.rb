@@ -1,29 +1,16 @@
 include_recipe '../functions/default.rb'
 
-fzf_tmux_bin = File.join(ENV['HOME'], 'bin', 'fzf-tmux')
-execute "curl -fSL -o #{fzf_tmux_bin} https://raw.githubusercontent.com/junegunn/fzf/master/bin/fzf-tmux" do
-  not_if "test -x #{fzf_tmux_bin}"
-end
-execute "chmod 755 #{fzf_tmux_bin}" do
-  not_if "test -x #{fzf_tmux_bin}"
+# wget binaries
+wget_binary 'fzf-tmux' do
+  url 'https://raw.githubusercontent.com/junegunn/fzf/master/bin/fzf-tmux'
 end
 
-File.join(ENV['HOME'], 'bin', 'embulk').tap do |embulk_bin|
-  execute "curl -fSL -o #{embulk_bin} https://dl.embulk.org/embulk-latest.jar" do
-    not_if "test -x #{embulk_bin}"
-  end
-  execute "chmod 755 #{embulk_bin}" do
-    not_if "test -x #{embulk_bin}"
-  end
+wget_binary 'embulk' do
+  url 'https://dl.embulk.org/embulk-latest.jar'
 end
 
-File.join(ENV['HOME'], 'bin', 'digdag').tap do |digdag_bin|
-  execute "curl -fSL -o #{digdag_bin} https://dl.digdag.io/digdag-latest" do
-    not_if "test -x #{digdag_bin}"
-  end
-  execute "chmod 755 #{digdag_bin}" do
-    not_if "test -x #{digdag_bin}"
-  end
+wget_binary 'digdag' do
+  url 'https://dl.digdag.io/digdag-latest'
 end
 
 # github binaries

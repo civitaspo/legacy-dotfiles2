@@ -38,3 +38,15 @@ define :github_binary, version: nil, repository: nil, archive: nil, binary_path:
   end
 end
 
+define :wget_binary, url: nil do
+  cmd = params[:name]
+  url = params[:url]
+  bin_path = File.join(ENV['HOME'], 'bin', cmd)
+  
+  execute "curl -fSL -o #{bin_path} #{url}" do
+    not_if "test -x #{bin_path}"
+  end
+  execute "chmod 755 #{bin_path}" do
+    not_if "test -x #{bin_path}"
+  end
+end
