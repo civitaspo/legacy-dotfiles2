@@ -81,7 +81,7 @@ setopt no_global_rcs
 export PATH=~/bin:"$PATH"
 
 # Settings for golang
-export GOPATH="$HOME/go"
+export GOPATH="$HOME"
 export GOBIN="$GOPATH/bin"
 export PATH="$GOBIN:$PATH"
 
