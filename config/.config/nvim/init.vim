@@ -82,6 +82,7 @@ au BufNewFile,BufRead *.t         set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.go        set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.psgi      set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.sh        set tabstop=4 shiftwidth=4 expandtab
+au BufNewFile,BufRead Dockerfile  set tabstop=4 shiftwidth=4 expandtab
 
 nmap <C-c> :q<CR>
 nmap <C-x> :wq<CR>
