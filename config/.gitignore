@@ -17,4 +17,4 @@ vendor/
 workspace
 /.gtm/
 .go-version
-
+.bash_history
