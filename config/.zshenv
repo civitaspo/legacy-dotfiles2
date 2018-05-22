@@ -24,7 +24,13 @@ path=( \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
+    /usr/local/opt/coreutils/libexec/gnubin(N-/) \
     "$path[@]" \
+    )
+
+manpath=( \
+    /usr/local/opt/coreutils/libexec/gnuman(N-/) \
+    "$manpath[@]" \
     )
 
 # NOTE: set fpath before compinit
