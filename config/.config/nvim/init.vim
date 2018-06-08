@@ -88,8 +88,10 @@ nmap <C-c> :q<CR>
 nmap <C-x> :wq<CR>
 nnoremap <C-f>        <Right>
 inoremap <C-f>        <Right>
+vnoremap <C-f>        <Right>
 nnoremap <C-b>        <Left>
 inoremap <C-b>        <Left>
+vnoremap <C-b>        <Left>
 inoremap <C-a>        <Home>
 nnoremap <C-a>        <Home>
 inoremap <C-e>        <End>
