@@ -50,6 +50,7 @@ set backspace=indent,eol,start
 set ruler
 set clipboard+=unnamedplus
 set cursorline
+set tabstop=2 shiftwidth=2 expandtab
 highlight CursorLine cterm=underline ctermbg=235
 set cursorcolumn
 highlight CursorColumn ctermbg=235
