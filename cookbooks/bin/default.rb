@@ -83,18 +83,3 @@ github_binary 'jq' do
   end
   extract     false
 end
-
-github_binary 'jid' do
-  version     '0.7.2'
-  repository  'simeji/jid'
-  case node[:platform]
-  when 'darwin'
-    archive     'jid_darwin_amd64.zip'
-    binary_path 'jid_darwin_amd64'
-  when 'ubuntu'
-    archive     'jid_linux_amd64.zip'
-    binary_path 'jid_darwin_amd64'
-  else
-    raise 'not supported now'
-  end
-end
