@@ -64,19 +64,20 @@ au BufNewFile,BufRead *.js        set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.json      set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.coffee    set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.scss      set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead Gemfile     set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead Groupfile.* set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead IAMfile.*   set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead Alarmfile.* set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead Rulefile.*  set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead Routefile.* set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead Gemfile     set tabstop=2 shiftwidth=2 expandtab filetype=ruby
+au BufNewFile,BufRead Groupfile.* set tabstop=2 shiftwidth=2 expandtab filetype=ruby
+au BufNewFile,BufRead IAMfile.*   set tabstop=2 shiftwidth=2 expandtab filetype=ruby
+au BufNewFile,BufRead Alarmfile.* set tabstop=2 shiftwidth=2 expandtab filetype=ruby
+au BufNewFile,BufRead Rulefile.*  set tabstop=2 shiftwidth=2 expandtab filetype=ruby
+au BufNewFile,BufRead Routefile.* set tabstop=2 shiftwidth=2 expandtab filetype=ruby
 au BufNewFile,BufRead *.watchr    set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rb        set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.rake      set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.yaml      set tabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.yml       set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.yml.erb   set tabstop=2 shiftwidth=2 expandtab filetype=yaml
 au BufNewFile,BufRead *.erb       set tabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.dig       set tabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.dig       set tabstop=2 shiftwidth=2 expandtab filetype=yaml
 au BufNewFile,BufRead *.pl        set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.pm        set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.t         set tabstop=4 shiftwidth=4 expandtab
