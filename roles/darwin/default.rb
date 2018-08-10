@@ -47,7 +47,7 @@ node.reverse_merge!(
     global: '1.8',
     version_map: {
       '10' => '/Library/Java/JavaVirtualMachines/jdk-10.jdk/Contents/Home',
-      '1.8' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_162.jdk/Contents/Home'
+      '1.8' => '/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home'
     },
   },
   scalaenv: {
