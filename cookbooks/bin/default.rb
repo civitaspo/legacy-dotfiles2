@@ -13,6 +13,15 @@ wget_binary 'digdag' do
   url 'https://dl.digdag.io/digdag-latest'
 end
 
+wget_binary 'ecs-cli' do
+  case node[:platform]
+  when 'darwin'
+    url 'https://s3.amazonaws.com/amazon-ecs-cli/ecs-cli-darwin-amd64-latest'
+  else
+    raise 'not supported now'
+  end
+end
+
 # github binaries
 github_binary 'fzf' do
   version    '0.16.5'
