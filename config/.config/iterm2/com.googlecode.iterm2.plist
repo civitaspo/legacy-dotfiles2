@@ -487,12 +487,14 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame SUStatusFrame</key>
+	<string>952 983 400 129 0 0 2304 1440 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>970 906 620 392 0 0 2560 1600 </string>
+	<string>970 516 620 392 0 0 2560 1080 </string>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>358 284 770 429 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 548 650 352 0 0 2560 1600 </string>
+	<string>0 5 2161 1435 0 0 2304 1440 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1196,11 +1198,11 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-05-10T00:33:38Z</date>
+	<date>2018-10-06T18:20:48Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>ShowFullScreenTabBar</key>
-	<false/>
+	<true/>
 	<key>TabStyle</key>
 	<integer>1</integer>
 	<key>TabViewType</key>
@@ -1214,7 +1216,7 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.1.6</string>
+	<string>3.2.1</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
 	<integer>0</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
