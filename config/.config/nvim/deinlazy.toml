@@ -12,6 +12,11 @@ on_ft = 'ruby'
 on_source = 'deoplete.nvim'
 
 [[plugins]]
+repo = 'vim-scripts/dbext.vim'
+on_ft = 'sql'
+on_source = 'deoplete.nvim'
+
+[[plugins]]
 repo = 'Shougo/denite.nvim'
 on_event = 'BufRead'
 hook_source = 'source ~/.config/nvim/plugins/denite.rc.vim'
