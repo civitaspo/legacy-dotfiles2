@@ -101,3 +101,19 @@ github_binary 'jq' do
   end
   extract     false
 end
+
+github_binary 'kustomize' do
+  version 'v2.0.3'
+  repository  'kubernetes-sigs/kustomize'
+  case node[:platform]
+  when 'darwin'
+    archive     'kustomize_2.0.3_darwin_amd64'
+    binary_path 'kustomize_2.0.3_darwin_amd64'
+  when 'ubuntu'
+    archive     'kustomize_2.0.3_ubuntu_amd64'
+    binary_path 'kustomize_2.0.3_ubuntu_amd64'
+  else
+    raise 'not supported now'
+  end
+  extract    false
+end
