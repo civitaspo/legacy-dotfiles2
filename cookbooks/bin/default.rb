@@ -22,6 +22,15 @@ wget_binary 'ecs-cli' do
   end
 end
 
+wget_binary 'aws-iam-authenticator' do
+  case node[:platform]
+  when 'darwin'
+    url 'https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator'
+  else 
+    url 'https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator'
+  end
+end
+
 # github binaries
 github_binary 'fzf' do
   version    '0.16.5'
