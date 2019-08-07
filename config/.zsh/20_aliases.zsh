@@ -89,6 +89,15 @@ if has 'git'; then
         }
         
     fi
+    if has 'perl'; then
+        delete_git_merged_branch() {
+            git branch --merged \
+                | perl -anlpe 's/\s+//g' \
+                | egrep -v '^(\*.*|develop|master|production|staging|development)$' \
+                | xargs git branch -d
+        }
+        alias gbdm=delete_git_merged_branch
+    fi
 fi
 
 
