@@ -44,7 +44,8 @@ if has 'git'; then
     alias gst='git status -sb'
     alias ga='git add'
     alias gc='git commit'
-    alias gco='git checkout'
+    alias gsw='git switch'
+    alias grs='git restore'
     alias gb='git branch'
     if has 'fzf-tmux'; then
         fzf_local_branches() {
