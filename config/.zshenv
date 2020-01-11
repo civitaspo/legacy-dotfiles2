@@ -22,6 +22,7 @@ path=( \
     ~/opt/google-cloud-sdk/current/bin(N-/) \
     ~/.zplug/bin(N-/) \
     ~/.tmux/bin(N-/) \
+    ~/.cargo/bin(N-/) \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
@@ -40,6 +41,7 @@ fpath=( \
     ~/.zsh/Completion(N-/) \
     ~/.zsh/functions(N-/) \
     ~/.zsh/plugins/zsh-completions(N-/) \
+    /usr/local/share/zsh/functions(N-/) \
     /usr/local/share/zsh/site-functions(N-/) \
     $fpath \
     )
