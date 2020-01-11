@@ -22,6 +22,10 @@ wget_binary 'ecs-cli' do
   end
 end
 
+wget_binary 'emojify' do
+  url 'https://raw.githubusercontent.com/mrowa44/emojify/master/emojify'
+end
+
 # github binaries
 github_binary 'fzf' do
   version    '0.20.0'
