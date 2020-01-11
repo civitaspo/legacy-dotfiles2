@@ -1,2 +1,5 @@
-PROMPT='%{$fg[magenta]%}[%c] %{$reset_color%}'
+# https://starship.rs/config/
+if has starship; then
+    eval "$(starship init zsh)"
+fi
 
