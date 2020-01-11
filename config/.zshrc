@@ -7,18 +7,20 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
     setopt xtrace prompt_subst
 fi
 
-if [[ -f ~/.zplug/init.zsh ]]; then
-    export ZPLUG_LOADFILE=$HOME/.zsh/zplugfile
-    source ~/.zplug/init.zsh
-  
-    if ! zplug check --verbose; then
-        printf "Install? [y/N]: "
-        if read -q; then
-            echo; zplug install
-        fi
-        echo
-    fi
-    zplug load
+if [[ -f ~/.zplugin/bin/zplugin.zsh ]]; then
+    source ~/.zplugin/bin/zplugin.zsh
+    autoload -Uz _zplugin
+    (( ${+_comps} )) && _comps[zplugin]=_zplugin
+
+    for f in $(ls ~/.zsh/*.zsh); do
+        zplugin snippet $f
+    done
+
+    zplugin light zdharma/fast-syntax-highlighting
+    zplugin light zsh-users/zsh-completions
+    zplugin light zsh-users/zsh-autosuggestions
+    zplugin light b4b4r07/emoji-cli
+    zplugin light b4b4r07/enhancd
 fi
 
 # Entirety of my startup file... then

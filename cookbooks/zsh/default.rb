@@ -1,8 +1,10 @@
 include_recipe '../git/default.rb'
 package 'zsh'
 
-git File.join(ENV['HOME'], '.zplug') do
-  repository "https://github.com/zplug/zplug.git"
+directory File.join(ENV['HOME'], '.zplugin')
+
+git File.join(ENV['HOME'], '.zplugin', 'bin') do
+  repository "https://github.com/zdharma/zplugin.git"
 end
 
 # load the below order
