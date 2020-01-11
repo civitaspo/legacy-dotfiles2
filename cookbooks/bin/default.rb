@@ -22,29 +22,20 @@ wget_binary 'ecs-cli' do
   end
 end
 
-wget_binary 'aws-iam-authenticator' do
-  case node[:platform]
-  when 'darwin'
-    url 'https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/darwin/amd64/aws-iam-authenticator'
-  else 
-    url 'https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator'
-  end
-end
-
 # github binaries
 github_binary 'fzf' do
-  version    '0.16.5'
+  version    '0.20.0'
   repository 'junegunn/fzf-bin'
   case node[:platform]
   when 'darwin'
-    archive    'fzf-0.16.5-darwin_amd64.tgz'
+    archive    'fzf-0.20.0-darwin_amd64.tgz'
   else
     raise 'not supported now'
   end
 end
 
 github_binary 'peco' do
-  version     'v0.4.9'
+  version     'v0.5.7'
   repository  'peco/peco'
   case node[:platform]
   when 'darwin'
@@ -56,11 +47,12 @@ github_binary 'peco' do
 end
 
 github_binary 'ghq' do
-  version    'v0.7.4'
+  version    'v1.0.1'
   repository 'motemen/ghq'
   case node[:platform]
   when 'darwin'
-    archive    'ghq_darwin_amd64.zip'
+    archive     'ghq_darwin_amd64.zip'
+    binary_path 'ghq_darwin_amd64/ghq'
   else
     raise 'not supported now'
   end
@@ -80,14 +72,13 @@ github_binary 'whalebrew' do
 end
 
 github_binary 'git-lfs' do
-  version     'v2.0.1'
+  version     'v2.9.2'
   repository  'git-lfs/git-lfs'
-  archive     'git-lfs-darwin-amd64-2.0.1.tar.gz'
-  binary_path 'git-lfs-2.0.1/git-lfs'
+  archive     'git-lfs-darwin-amd64-v2.9.2.tar.gz'
 end
 
 github_binary 'jq' do
-  version     'jq-1.5'
+  version     'jq-1.6'
   repository  'stedolan/jq'
   case node[:platform]
   when 'darwin'
