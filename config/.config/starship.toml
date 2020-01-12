@@ -1,1 +1,25 @@
 add_newline = false
+
+[aws]
+disabled = true
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "⚡️"
+discharging_symbol = "💀"
+
+[cmd_duration]
+min_time = 500  # milliseconds
+prefix = "⏳ "
+
+[git_branch]
+symbol = "🌵 "
+
+[git_commit]
+disabled = false
+prefix = "🔗 "
+suffix = " "
+
+[kubernetes]
+disabled = true
+
