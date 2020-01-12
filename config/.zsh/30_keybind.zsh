@@ -2,20 +2,6 @@
 # Use emacs mode
 bindkey -e
 
-# Enter
-do-enter() {
-    if [ -n "$BUFFER" ]; then
-        zle accept-line
-        return
-    fi
-
-    echo
-    /bin/ls -G
-    zle reset-prompt
-}
-zle -N do-enter
-bindkey '^m' do-enter
-
 # Helper function
 # use 'zle -la' option
 # zsh -la option returns true if the widget exists
