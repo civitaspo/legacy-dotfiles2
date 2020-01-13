@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AllowClipboardAccess</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>AppleScrollAnimationEnabled</key>
@@ -441,6 +443,8 @@
 	<false/>
 	<key>DisableMetalWhenIdle</key>
 	<false/>
+	<key>DoubleClickPerformsSmartSelection</key>
+	<true/>
 	<key>EnableRendezvous</key>
 	<false/>
 	<key>HapticFeedbackForEsc</key>
@@ -483,7 +487,7 @@
 	dWxs0g0ODxJaTlMub2JqZWN0c1YkY2xhc3OiEBGAAoAKgA3TFA0OFRkdV05TLmtleXOj
 	FhcYgAOABIAFoxobHIAGgAeACIAJWklkZW50aWZpZXJVV2lkdGhWSGlkZGVuUTAjQGjA
 	AAAAAAAI0iUmJyhaJGNsYXNzbmFtZVgkY2xhc3Nlc1xOU0RpY3Rpb25hcnmiJylYTlNP
-	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0BzsZ2yLQ5W0iUmNzhe
+	YmplY3TTFA0OKy8doxYXGIADgASABaMwMRyAC4AMgAiACVExI0B0oZ2yLQ5W0iUmNzhe
 	TlNNdXRhYmxlQXJyYXmjNzkpV05TQXJyYXkACAARABoAJAApADIANwBJAEwAUgBUAGMA
 	aQBuAHkAgACDAIUAhwCJAJAAmACcAJ4AoACiAKYAqACqAKwArgC5AL8AxgDIANEA0gDX
 	AOIA6wD4APsBBAELAQ8BEQETARUBGQEbAR0BHwEhASMBLAExAUABRAAAAAAAAAIBAAAA
@@ -513,7 +517,7 @@
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>981 702 918 514 0 0 2560 1600 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 2304 1440 0 0 2304 1440 </string>
+	<string>20 1062 550 159 0 0 2304 1440 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>343 112 585 427 0 0 2560 1080 </string>
 	<key>New Bookmarks</key>
@@ -1094,11 +1098,13 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>S2G-Uni-font 12</string>
+			<string>HackGenConsoleForPowerline-Regular 14</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
+			<key>Non-ASCII Ligatures</key>
+			<false/>
 			<key>Normal Font</key>
-			<string>HackGenConsoleForPowerline-Bold 14</string>
+			<string>HackGenConsoleForPowerline-Regular 14</string>
 			<key>Only The Default BG Color Uses Transparency</key>
 			<false/>
 			<key>Option Key Sends</key>
@@ -1174,6 +1180,7 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>S2G Uni font</string>
 		<string>HackGen35 Console for Powerline</string>
 		<string>HackGen Console for Powerline</string>
 		<string>HackGen Console</string>
@@ -1181,9 +1188,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {2560, 1080}}</string>
+		<string>{{0, 0}, {2304, 1440}}</string>
 		<key>topLeft</key>
-		<string>{269, 595}</string>
+		<string>{312, 1440}</string>
 	</dict>
 	<key>NoSyncHaveRequestedFullDiskAccess</key>
 	<true/>
@@ -1192,7 +1199,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>30FE7A9E-CC11-4A27-A5A4-CD600471322B</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>23</integer>
+	<integer>24</integer>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1971,7 +1978,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2020-01-09T06:38:21Z</date>
+	<date>2020-01-12T04:15:37Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
