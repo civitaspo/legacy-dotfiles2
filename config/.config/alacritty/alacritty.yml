@@ -9,10 +9,10 @@ scrolling:
 
 font:
   normal:
-    family: HackGen Console for Powerline
-    style: Regular
+    family: Hurmit Nerd Font Mono
+    # style: Regular
   bold:
-    family: HackGen Console for Powerline
+    family: Hurmit Nerd Font Mono
     style: Bold
   italic:
     family: HackGen Console for Powerline
