@@ -33,7 +33,8 @@ if has('vim_starting') && dein#check_install()
 endif
 " }}}
 
-let g:python3_host_prog = expand('~/.pyenv/versions/neovim3/bin/python')
+" TODO: Set correct path
+let g:python3_host_prog = expand('/usr/local/.pyenv/versions/neovim/bin/python')
 
 syntax on
 set hlsearch
