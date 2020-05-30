@@ -19,6 +19,7 @@ dotfile '.pryrc'
 dotfile '.secret-env.sh'
 dotfile '.hammerspoon'
 dotfile '.op'
+dotfile '.gem'
 
 # keyrepeat
 execute "defaults write -g InitialKeyRepeat -int 15" do
