@@ -11,6 +11,7 @@ path=( \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
     /usr/local/opt/coreutils/libexec/gnubin(N-/) \
+    /usr/local/opt/*/bin(N-/) \
     "$path[@]" \
     )
 
