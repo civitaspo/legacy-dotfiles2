@@ -1,15 +1,4 @@
-[submodule "plugins/itamae-plugin-recipe-rbenv"]
-	path = plugins/itamae-plugin-recipe-rbenv
-	url = https://github.com/k0kubun/itamae-plugin-recipe-rbenv.git
-[submodule "plugins/itamae-plugin-recipe-goenv"]
-	path = plugins/itamae-plugin-recipe-goenv
-	url = https://github.com/civitaspo/itamae-plugin-recipe-goenv.git
 [submodule ".secfiles"]
 	path = .secfiles
 	url = https://github.com/civitaspo/.secfiles.git
-[submodule "plugins/itamae-plugin-recipe-scalaenv"]
-	path = plugins/itamae-plugin-recipe-scalaenv
-	url = https://github.com/civitaspo/itamae-plugin-recipe-scalaenv.git
-[submodule "plugins/itamae-plugin-recipe-sbtenv"]
-	path = plugins/itamae-plugin-recipe-sbtenv
-	url = https://github.com/civitaspo/itamae-plugin-recipe-sbtenv.git
+
