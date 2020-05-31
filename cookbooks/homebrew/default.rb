@@ -5,6 +5,6 @@ end
 
 dotfile '.Brewfile'
 
-execute "brew bundle --global" do
+execute "HOMEBREW_FORCE_BREWED_CURL=1 brew bundle --global" do
   not_if "brew bundle check --global"
 end
