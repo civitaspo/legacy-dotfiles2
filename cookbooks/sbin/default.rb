@@ -1,3 +1,3 @@
 git File.join(ENV['HOME'], 'sbin') do
-  repository 'git@github.com:civitaspo/sbin.git'
+  repository 'https://github.com/civitaspo/sbin.git'
 end
