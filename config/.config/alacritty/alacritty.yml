@@ -4,9 +4,6 @@ window:
   decorations: none
   startup_mode: Maximized
 
-scrolling:
-  auto_scroll: true
-
 font:
   normal:
     family: Hurmit Nerd Font Mono
