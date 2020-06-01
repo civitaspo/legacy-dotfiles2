@@ -123,11 +123,17 @@ cask "totalspaces"
 cask "vagrant"
 cask "virtualbox"
 cask "visual-studio-code-insiders"
+cask "webex-teams"
 cask "zoomus"
 mas "Display Menu", id: 549083868
+mas "GarageBand", id: 682658836
 mas "Habitify", id: 1140787122
 mas "HazeOver", id: 430798174
+mas "iMovie", id: 408981434
+mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
 mas "PopClip", id: 445189367
 mas "Todoist", id: 585829637
 mas "Tweetbot", id: 557168941
