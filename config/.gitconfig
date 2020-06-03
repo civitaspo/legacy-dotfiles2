@@ -1,5 +1,5 @@
 [user]
-	name = Civitaspo
+	name = civitaspo
 	email = civitaspo@gmail.com
 [core]
 	excludesfile = ~/.gitignore
