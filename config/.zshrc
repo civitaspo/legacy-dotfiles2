@@ -15,6 +15,9 @@ if [[ -f ~/.zplugin/bin/zplugin.zsh ]]; then
     for f in $(ls ~/.zsh/*.zsh); do
         zplugin snippet $f
     done
+    if has 'gcloud'; then
+        source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
+    fi
 
     zplugin light zdharma/fast-syntax-highlighting
     zplugin light zsh-users/zsh-completions
