@@ -1,7 +1,7 @@
 # ref. https://raw.githubusercontent.com/alacritty/alacritty/master/alacritty.yml
 
 window:
-  decorations: none
+  decorations: full
   startup_mode: Maximized
 
 font:
