@@ -1,21 +1,59 @@
-call denite#custom#var('file_rec', 'command',
-      \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+if executable('rg')
+  call denite#custom#var('file/rec', 'command',
+        \ ['rg', '--files', '--glob', '!.git', '--color', 'never'])
+  call denite#custom#var('grep', {
+        \ 'command': ['rg', '--threads', '1'],
+        \ 'recursive_opts': [],
+        \ 'final_opts': [],
+        \ 'separator': ['--'],
+        \ 'default_opts': ['-i', '--vimgrep', '--no-heading'],
+        \ })
+else
+  call denite#custom#var('file/rec', 'command',
+        \ ['ag', '--follow', '--nocolor', '--nogroup', '-g', ''])
+endif
 
-call denite#custom#map('insert', '<DOWN>',
-      \ '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('insert', '<UP>',
-      \ '<denite:move_to_previous_line>', 'noremap')
-call denite#custom#map('insert', "'",
-      \ '<denite:move_to_next_line>', 'noremap')
-call denite#custom#map('normal', 'r',
-      \ '<denite:do_action:quickfix>', 'noremap')
+call denite#custom#source('file/old', 'matchers', [
+      \ 'matcher/fruzzy', 'matcher/project_files', 'matcher/ignore_globs',
+      \ ])
+call denite#custom#source('tag', 'matchers', ['matcher/substring'])
+call denite#custom#source('file/rec', 'matchers',
+      \ ['matcher/fruzzy'])
+call denite#custom#source('file/old,ghq', 'converters',
+      \ ['converter/relative_word', 'converter/relative_abbr'])
 
-call denite#custom#alias('source', 'file_rec/git', 'file_rec')
-call denite#custom#var('file_rec/git', 'command',
+call denite#custom#alias('source', 'file/git', 'file/rec')
+call denite#custom#var('file/git', 'command',
       \ ['git', 'ls-files', '-co', '--exclude-standard'])
 
-call denite#custom#option('default', 'prompt', '>')
-call denite#custom#option('default', 'short_source_names', v:true)
+call denite#custom#alias('source', 'file/dirty', 'file/rec')
+call denite#custom#var('file/dirty', 'command',
+      \ ['git', 'ls-files', '-mo',
+      \  '--directory', '--no-empty-directory', '--exclude-standard'])
+
+" call denite#custom#option('default', 'prompt', '>')
+" call denite#custom#option('default', 'short_source_names', v:true)
+if has('nvim')
+  call denite#custom#option('default', {
+        \ 'highlight_filter_background': 'CursorLine',
+        \ 'source_names': 'short',
+        \ 'split': 'floating',
+        \ 'filter_split_direction': 'floating',
+        \ 'vertical_preview': v:true,
+        \ 'floating_preview': v:true,
+        \ })
+else
+  call denite#custom#option('default', {
+        \ 'highlight_filter_background': 'CursorLine',
+        \ 'source_names': 'short',
+        \ 'vertical_preview': v:true,
+        \ })
+endif
+call denite#custom#option('search', {
+      \ 'highlight_filter_background': 'CursorLine',
+      \ 'source_names': 'short',
+      \ 'filter_split_direction': 'floating',
+      \ })
 
 let s:menus = {}
 let s:menus.vim = {
@@ -26,38 +64,26 @@ let s:menus.vim.file_candidates = [
     \ ]
 call denite#custom#var('menu', 'menus', s:menus)
 
-call denite#custom#filter('matcher_ignore_globs', 'ignore_globs',
+call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
       \ [ '.git/', '.ropeproject/', '__pycache__/',
       \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
 
-nnoremap <silent> ;r
-      \ :<C-u>Denite -buffer-name=register
-      \ register neoyank<CR>
-xnoremap <silent> ;r
-      \ :<C-u>Denite -default-action=replace -buffer-name=register
-      \ register neoyank<CR>
 nnoremap <silent> [Window]<Space>
-      \ :<C-u>Denite file_rec:~/.vim/rc<CR>
-nnoremap <silent> / :<C-u>Denite -buffer-name=search
-      \ line<CR>
-nnoremap <silent> * :<C-u>DeniteCursorWord -buffer-name=search
-      \ -mode=normal line<CR>
-nnoremap <silent> [Window]s :<C-u>Denite file_point file_old
-      \ `finddir('.git', ';') != '' ? 'file_rec/git' : 'file_rec'`<CR>
-nnoremap <silent><expr> tt  &filetype == 'help' ?  "g\<C-]>" :
-      \ ":\<C-u>DeniteCursorWord -buffer-name=tag -immediately
-      \  unite:tag unite:tag/include\<CR>"
-nnoremap <silent><expr> tp  &filetype == 'help' ?
-      \ ":\<C-u>pop\<CR>" : ":\<C-u>Denite -mode=normal jump\<CR>"
-nnoremap <silent> [Window]n :<C-u>Denite dein<CR>
-nnoremap <silent> [Window]g :<C-u>Denite ghq<CR>
-nnoremap <silent> ;g :<C-u>Denite -buffer-name=search
-      \ -no-empty -mode=normal grep<CR>
-nnoremap <silent> n :<C-u>Denite -buffer-name=search
-      \ -resume -mode=normal -refresh<CR>
-nnoremap <silent> ft :<C-u>Denite filetype<CR>
-nnoremap <silent> <C-t> :<C-u>Denite
-      \ -select=`tabpagenr()-1` -mode=normal deol<CR>
-nnoremap <silent> <C-k> :<C-u>Denite -mode=normal change jump<CR>
-nnoremap <silent> [Space]gs :<C-u>Denite gitstatus<CR>
+    \ :<C-u>Denite file/rec:~/.vim/rc<CR>
+nnoremap <silent><expr> / wordcount().chars > 30000 ?
+    \ ":\<C-u>Denite -buffer-name=search -start-filter
+    \  -search line/external\<CR>" :
+    \ ":\<C-u>Denite -buffer-name=search -start-filter -search line\<CR>"
+nnoremap <silent><expr> * wordcount().chars > 30000 ?
+    \ ":\<C-u>DeniteCursorWord -buffer-name=search -search line/external\<CR>" :
+    \ ":\<C-u>DeniteCursorWord -buffer-name=search -search line\<CR>"
+xnoremap <silent> *
+    \ "qy:Denite -input=`@q` -buffer-name=search -search line<CR>
+nnoremap <silent><expr> [Window]s finddir('.git', ';') != '' ?
+    \ ":\<C-u>Denite -sorters=sorter/rank -unique
+    \  file/point file/old file/dirty file/git file file:new\<CR>" :
+    \ ":\<C-u>Denite -sorters=sorter/rank -unique
+    \  file/point file/old file file:new\<CR>"
+nnoremap <silent> n
+    \ :<C-u>Denite -buffer-name=search -resume<CR>
 
