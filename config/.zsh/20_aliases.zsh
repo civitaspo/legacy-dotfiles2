@@ -17,6 +17,7 @@ alias mkdir='mkdir -p'
 alias ssh='TERM=xterm ssh -A -C'
 alias tmux='tmux -u'
 alias sudo='sudo '
+alias k='kubectl'
 
 if has 'nvim'; then
     alias vim='nvim'
@@ -64,8 +65,8 @@ if has 'git'; then
         alias pull='git pull $(fzf_remotes) $(fzf_local_branches)'
 
         # https://github.com/junegunn/fzf/wiki/Examples#git
-        # fco - checkout git branch/tag
-        fco() {
+        # fsw - git switch branch/tag by fzf
+        fsw() {
             local tags branches target
             tags=$(
                 git tag | awk '{print "\x1b[31;1mtag\x1b[m\t" $1}') || return
@@ -76,7 +77,7 @@ if has 'git'; then
             target=$(
                 (echo "$tags"; echo "$branches") |
                 fzf-tmux -l30 -- --no-hscroll --ansi +m -d "\t" -n 2) || return
-            git checkout $(echo "$target" | awk '{print $2}')
+            git switch $(echo "$target" | awk '{print $2}')
         }
 
         # fshow - git commit browser
