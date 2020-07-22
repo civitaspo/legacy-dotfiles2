@@ -16,6 +16,7 @@ if [[ -f ~/.zplugin/bin/zplugin.zsh ]]; then
         zplugin snippet $f
     done
     if has 'gcloud'; then
+        source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc
         source /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc
     fi
 
