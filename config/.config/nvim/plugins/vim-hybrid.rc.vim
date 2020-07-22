@@ -1,2 +1,3 @@
 set background=dark
-au MyAutoCmd VimEnter * nested colorscheme hybrid
+let g:hybrid_transparent_background = 1
+au MyAutoCmd VimEnter * nested colorscheme hybrid_material

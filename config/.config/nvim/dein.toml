@@ -2,7 +2,7 @@
 repo = 'Shougo/dein.vim'
 
 [[plugins]] # colorscheme
-repo = 'w0ng/vim-hybrid'
+repo = 'kristijanhusak/vim-hybrid-material'
 hook_add = 'source ~/.config/nvim/plugins/vim-hybrid.rc.vim'
 
 [[plugins]]
