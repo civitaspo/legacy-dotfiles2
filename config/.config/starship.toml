@@ -21,5 +21,6 @@ prefix = "🔗 "
 suffix = " "
 
 [kubernetes]
-disabled = true
-
+symbol = "⛵ "
+style = "dimmed green"
+disabled = false
