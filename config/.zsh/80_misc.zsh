@@ -4,28 +4,28 @@ umask 022
 stty -ixon -ixoff
 
 if has 'rbenv'; then
-  eval "$(rbenv init -)"
+  eval "$(rbenv init - --no-rehash)"
 fi
 if has 'goenv'; then
-  eval "$(goenv init -)"
+  eval "$(goenv init - --no-rehash)"
 fi
 if has 'pyenv'; then
-  eval "$(pyenv init -)"
+  eval "$(pyenv init - --no-rehash)"
 fi
 if has 'pyenv-virtualenv-init'; then
-  eval "$(pyenv virtualenv-init -)"
+  eval "$(pyenv virtualenv-init - --no-rehash)"
 fi
 if has 'ndenv'; then
-  eval "$(ndenv init -)"
+  eval "$(ndenv init - --no-rehash)"
 fi
 if has 'jenv'; then
-  eval "$(jenv init -)"
+  eval "$(jenv init - --no-rehash)"
 fi
 if has 'scalaenv'; then
-  eval "$(scalaenv init -)"
+  eval "$(scalaenv init - --no-rehash)"
 fi
 if has 'sbtenv'; then
-  eval "$(sbtenv init -)"
+  eval "$(sbtenv init - --no-rehash)"
 fi
 
 # ref. https://qiita.com/sonots/items/906798c408132e26b41c
