@@ -6,16 +6,16 @@ window:
 
 font:
   normal:
-    family: Hurmit Nerd Font Mono
+    family: Telegrama
     # style: Regular
   bold:
-    family: Hurmit Nerd Font Mono
+    family: Telegrama
     style: Bold
   italic:
-    family: HackGen Console for Powerline
+    family: Telegrama
     style: Regular  # TODO: Italic
   bold_italic:
-    family: HackGen Console for Powerline
+    family: Telegrama
     style: Bold  # TODO: Italic
 
   size: 14.0
@@ -53,7 +53,7 @@ colors:
     magenta: '0xc594c5'
     cyan:    '0x5fb3b3'
     white:   '0xf3f4f5'
-background_opacity: 0.7
+background_opacity: 1
 
 selection:
   save_to_clipboard: true
