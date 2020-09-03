@@ -21,6 +21,7 @@ dotfile '.secret-env.sh'
 dotfile '.hammerspoon'
 dotfile '.op'
 dotfile '.gem'
+dotfile '.ideavimrc'
 
 # keyrepeat
 execute "defaults write -g InitialKeyRepeat -int 15" do
