@@ -7,6 +7,7 @@ path=( \
     ~/.zplug/bin(N-/) \
     ~/.tmux/bin(N-/) \
     ~/.cargo/bin(N-/) \
+    ~/.krew/bin(N-/) \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
