@@ -368,25 +368,25 @@
                         ]
                     },
                     {
-                        "description": "Use ELECOM EX-G mouse button 3, 4, 5, 6",
+                        "description": "Use ELECOM EX-G mouse button 3, 4, and 5",
                         "manipulators": [
                             {
-                                "description": "button3 -> command + <-",
+                                "description": "button3 -> command + ↑",
                                 "from": {
                                     "pointing_button": "button3"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow",
+                                        "key_code": "up_arrow",
                                         "modifiers": [
-                                            "left_command"
+                                            "left_control"
                                         ]
                                     }
                                 ],
                                 "type": "basic"
                             },
                             {
-                                "description": "button4 -> command + <-",
+                                "description": "button4 -> command + ←",
                                 "from": {
                                     "pointing_button": "button4"
                                 },
@@ -401,28 +401,13 @@
                                 "type": "basic"
                             },
                             {
-                                "description": "button5 -> command + ->",
+                                "description": "button5 -> command + →",
                                 "from": {
                                     "pointing_button": "button5"
                                 },
                                 "to": [
                                     {
                                         "key_code": "right_arrow",
-                                        "modifiers": [
-                                            "left_command"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "description": "button6 -> command + <-",
-                                "from": {
-                                    "pointing_button": "button6"
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_arrow",
                                         "modifiers": [
                                             "left_command"
                                         ]
@@ -1115,19 +1100,6 @@
                         "is_pointing_device": false,
                         "product_id": 12384,
                         "vendor_id": 65261
-                    },
-                    "ignore": false,
-                    "manipulate_caps_lock_led": false,
-                    "simple_modifications": []
-                },
-                {
-                    "disable_built_in_keyboard_if_exists": false,
-                    "fn_function_keys": [],
-                    "identifiers": {
-                        "is_keyboard": false,
-                        "is_pointing_device": true,
-                        "product_id": 297,
-                        "vendor_id": 1390
                     },
                     "ignore": false,
                     "manipulate_caps_lock_led": false,
