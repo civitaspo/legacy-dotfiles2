@@ -17,7 +17,6 @@ alias mkdir='mkdir -p'
 alias ssh='TERM=xterm ssh -A -C'
 alias tmux='tmux -u'
 alias sudo='sudo '
-alias k='kubectl'
 
 if has 'nvim'; then
     alias vim='nvim'
@@ -102,4 +101,7 @@ if has 'git'; then
     fi
 fi
 
-
+if has 'kubectl'; then
+    alias k='kubectl'
+    alias kpo='kubectl get po -A -o wide | fzf'
+fi

@@ -8,11 +8,16 @@ path=( \
     ~/.tmux/bin(N-/) \
     ~/.cargo/bin(N-/) \
     ~/.krew/bin(N-/) \
+    ~/go/*/bin(N-/) \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
     /usr/local/opt/coreutils/libexec/gnubin(N-/) \
+    /usr/local/opt/gnu-sed/libexec/gnubin(N-/) \
+    /usr/local/opt/findutils/libexec/gnubin(N-/) \
+    /usr/local/opt/gnu-tar/libexec/gnubin(N-/) \
     /usr/local/opt/*/bin(N-/) \
+    /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/) \
     "$path[@]" \
     )
 
