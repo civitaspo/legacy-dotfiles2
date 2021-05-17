@@ -32,3 +32,7 @@ execute "defaults write -g KeyRepeat -int 1" do
   not_if "[ $(defaults read -g KeyRepeat) -eq 1 ]"
 end
 
+# Dock is hidden unless the cursor is hovered over it for 65535 seconds.
+execute "defaults write com.apple.dock autohide-delay -float 65535" do
+  not_if "[ $(defaults read com.apple.dock autohide-delay) -eq 65535 ]"
+end

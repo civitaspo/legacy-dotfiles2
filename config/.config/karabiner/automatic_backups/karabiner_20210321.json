@@ -368,35 +368,6 @@
                         ]
                     },
                     {
-                        "description": "Change Command+Option+Space to Command+Ctrl+Space",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "spacebar",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "command",
-                                            "option"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "spacebar",
-                                        "modifiers": [
-                                            "command",
-                                            "control"
-                                        ]
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Use ELECOM EX-G mouse button 3, 4, 5, 6",
                         "manipulators": [
                             {
@@ -462,40 +433,25 @@
                         ]
                     },
                     {
-                        "description": "Change left_command + left_control + right_arrow to left_control + tab In Google Chrome",
+                        "description": "Change C -> K When using Japanese IM",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "bundle_identifiers": [
-                                            "^com.google.Chrome"
+                                        "input_sources": [
+                                            {
+                                                "language": "ja"
+                                            }
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "right_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "c"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
-                                        "modifiers": {
-                                            "mandatory": [
-                                                "left_control"
-                                            ],
-                                            "optional": [
-                                                "any"
-                                            ]
-                                        }
+                                        "key_code": "k"
                                     }
                                 ],
                                 "type": "basic"
@@ -503,41 +459,25 @@
                         ]
                     },
                     {
-                        "description": "Change left_command + left_control + left_arrow to left_control + left_shift + tab In Google Chrome",
+                        "description": "Change K -> C When using Japanese IM",
                         "manipulators": [
                             {
                                 "conditions": [
                                     {
-                                        "bundle_identifiers": [
-                                            "^com.google.Chrome"
+                                        "input_sources": [
+                                            {
+                                                "language": "ja"
+                                            }
                                         ],
-                                        "type": "frontmost_application_if"
+                                        "type": "input_source_if"
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "left_arrow",
-                                    "modifiers": {
-                                        "mandatory": [
-                                            "left_control",
-                                            "left_command"
-                                        ],
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
+                                    "key_code": "k"
                                 },
                                 "to": [
                                     {
-                                        "key_code": "tab",
-                                        "modifiers": {
-                                            "mandatory": [
-                                                "left_control",
-                                                "left_shift"
-                                            ],
-                                            "optional": [
-                                                "any"
-                                            ]
-                                        }
+                                        "key_code": "c"
                                     }
                                 ],
                                 "type": "basic"

@@ -21,3 +21,4 @@ workspace
 .metals
 .bloop
 .vscode
+.dccache

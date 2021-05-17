@@ -8,6 +8,8 @@ if has 'rbenv'; then
 fi
 if has 'goenv'; then
   eval "$(goenv init - --no-rehash)"
+  # NOTE: The above command does not export PATH.
+  export PATH="$GOENV_ROOT/shims:$PATH"
 fi
 if has 'pyenv'; then
   eval "$(pyenv init - --no-rehash)"
