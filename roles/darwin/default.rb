@@ -31,3 +31,8 @@ end
 execute "defaults write com.apple.dock autohide-delay -float 65535" do
   not_if "[ $(defaults read com.apple.dock autohide-delay) -eq 65535 ]"
 end
+
+# Do not show other letters by hold pressing keys.
+execute "defaults write -g ApplePressAndHoldEnabled -bool false" do
+  not_if "[ $(defaults read -g ApplePressAndHoldEnabled ) -eq 0 ]"
+end
