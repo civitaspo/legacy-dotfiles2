@@ -1,3 +1,0 @@
-
-package 'tig'
-dotfile '.tigrc'
