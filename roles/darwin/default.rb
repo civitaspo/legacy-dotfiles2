@@ -10,7 +10,6 @@ include_cookbook 'bin'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
-dotfile '.doc'
 dotfile '.pryrc'
 dotfile '.secret-env.sh'
 dotfile '.hammerspoon'
