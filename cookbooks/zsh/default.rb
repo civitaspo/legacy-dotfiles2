@@ -24,6 +24,3 @@ execute "chsh -s /usr/local/bin/zsh #{node[:user]}" do
   not_if "echo $SHELL | grep /usr/local/bin/zsh"
 end
 
-# https://starship.rs/
-package 'starship'
-dotfile '.config/starship.toml'

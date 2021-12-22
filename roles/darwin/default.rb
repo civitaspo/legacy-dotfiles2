@@ -2,6 +2,7 @@ include_role 'base'
 include_cookbook 'homebrew' # install packages from .Brewfile
 
 include_cookbook 'zsh'
+include_cookbook 'starship'
 include_cookbook 'tmux'
 include_cookbook 'neovim'
 include_cookbook 'scripts'
