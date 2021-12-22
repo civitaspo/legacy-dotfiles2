@@ -30,13 +30,6 @@ if has 'sbtenv'; then
   eval "$(sbtenv init - --no-rehash)"
 fi
 
-# ref. brew info google-cloud-sdk
-export CLOUDSDK_PYTHON="/usr/local/opt/python@3.8/libexec/bin/python"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
-source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
-
-
-
 # ref. https://qiita.com/sonots/items/906798c408132e26b41c
 function gcloud-activate() {
   name="$1"
