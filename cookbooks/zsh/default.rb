@@ -18,11 +18,18 @@ dotfile '.zlogin'
 dotfile '.zlogout'
 dotfile '.zsh'
 
-execute "echo '/usr/local/bin/zsh' | sudo tee -a /etc/shells" do
-  not_if "grep '^/usr/local/bin/zsh' /etc/shells"
+
+zsh_path =
+  case node[:platform]
+  when 'darwin' then '/opt/homebrew/bin/zsh'
+  else '/usr/local/bin/zsh'
+  end
+
+execute "echo '#{zsh_path}' | sudo tee -a /etc/shells" do
+  not_if "grep '^#{zsh_path}' /etc/shells"
 end
 
-execute "chsh -s /usr/local/bin/zsh #{node[:user]}" do
-  not_if "echo $SHELL | grep /usr/local/bin/zsh"
+execute "sudo chsh -s #{zsh_path} #{node[:user]}" do
+  not_if "echo $SHELL | grep #{zsh_path}"
 end
 

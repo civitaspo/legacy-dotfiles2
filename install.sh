@@ -38,10 +38,15 @@ __setup() {
 }
 
 __main() {
-    # Homebrew does not allow sudo.
     case "${MITAMAE_KERNEL_LC}" in
-        "darwin")  bin/mitamae local lib/recipe.rb "$@" ;;
-        *) sudo -E bin/mitamae local lib/recipe.rb "$@" ;;
+        "darwin")
+            echo '[INFO] Please input sudo password to avoid being asked for a password during provisioning.'
+            sudo -v && sudo -l mkdir &>/dev/null
+            bin/mitamae local lib/recipe.rb "$@"
+            ;;
+        *)
+            sudo -E bin/mitamae local lib/recipe.rb "$@"
+            ;;
     esac
 }
 

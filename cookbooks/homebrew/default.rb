@@ -1,5 +1,5 @@
 execute "Install Homebrew" do
-  command 'yes | /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
+  command 'HAVE_SUDO_ACCESS=1 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"'
   not_if "which brew >/dev/null"
 end
 
