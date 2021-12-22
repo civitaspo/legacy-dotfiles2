@@ -4,9 +4,9 @@
 # Installation
 
 1. Setup your ssh key for `git clone`.
-1. execute `git submodule update --init`
 1. execute `./install.sh`.
 1. (Optional) execute `git lfs pull`
+1. (Optional) execute `HOMEBREW_FORCE_BREWED_CURL=1 brew bundle --global`
 
 # Notes
 
