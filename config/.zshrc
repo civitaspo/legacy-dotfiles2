@@ -6,20 +6,21 @@ if [[ "$PROFILE_STARTUP" == true ]]; then
     setopt xtrace prompt_subst
 fi
 
-if [[ -f ~/.zplugin/bin/zplugin.zsh ]]; then
-    source ~/.zplugin/bin/zplugin.zsh
-    autoload -Uz _zplugin
-    (( ${+_comps} )) && _comps[zplugin]=_zplugin
+ZINIT_HOME="${XDG_DATA_HOME:-${HOME}/.local/share}/zinit/zinit.git"
+if [[ -f "${ZINIT_HOME}/zinit.zsh" ]]; then
+    source "${ZINIT_HOME}/zinit.zsh"
+    autoload -Uz _zinit
+    (( ${+_comps} )) && _comps[zinit]=_zinit
 
+    # https://github.com/zdharma-continuum/zinit
     for f in $(ls ~/.zsh/*.zsh); do
-        zplugin snippet $f
+        zinit snippet $f
     done
-
-    zplugin light zdharma/fast-syntax-highlighting
-    zplugin light zsh-users/zsh-completions
-    zplugin light zsh-users/zsh-autosuggestions
-    zplugin light b4b4r07/emoji-cli
-    zplugin light b4b4r07/enhancd
+    zinit light zdharma-continuum/fast-syntax-highlighting
+    zinit light zsh-users/zsh-completions
+    zinit light zsh-users/zsh-autosuggestions
+    zinit light b4b4r07/emoji-cli
+    zinit light b4b4r07/enhancd
 fi
 
 # Entirety of my startup file... then

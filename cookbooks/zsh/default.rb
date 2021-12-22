@@ -1,10 +1,12 @@
 include_recipe '../git/default.rb'
 package 'zsh'
 
-directory File.join(ENV['HOME'], '.zplugin')
+directory File.join(ENV['HOME'], '.local')
+directory File.join(ENV['HOME'], '.local', 'share')
+directory File.join(ENV['HOME'], '.local', 'share', 'zinit')
 
-git File.join(ENV['HOME'], '.zplugin', 'bin') do
-  repository "https://github.com/zdharma/zplugin.git"
+git File.join(ENV['HOME'], '.local', 'share', 'zinit', 'zinit.git') do
+  repository "https://github.com/zdharma-continuum/zinit.git"
 end
 
 # load the below order
