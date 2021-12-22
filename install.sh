@@ -40,8 +40,8 @@ __setup() {
 __main() {
     # Homebrew does not allow sudo.
     case "${MITAMAE_KERNEL_LC}" in
-      "darwin")  bin/mitamae local lib/recipe.rb "$@" ;;
-      *) sudo -E bin/mitamae local lib/recipe.rb "$@" ;;
+        "darwin")  bin/mitamae local lib/recipe.rb "$@" ;;
+        *) sudo -E bin/mitamae local lib/recipe.rb "$@" ;;
     esac
 }
 
