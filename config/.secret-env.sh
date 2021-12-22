@@ -1,1 +1,1 @@
-../.secfiles/.secret-env.sh
+.secfiles/.secret-env.sh

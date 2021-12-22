@@ -6,15 +6,13 @@ include_cookbook 'tmux'
 include_cookbook 'neovim'
 include_cookbook 'scripts'
 include_cookbook 'sbin'
+include_cookbook 'secrets'
 include_cookbook 'bin'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
 dotfile '.pryrc'
-dotfile '.secret-env.sh'
 dotfile '.hammerspoon'
-dotfile '.op'
-dotfile '.gem'
 dotfile '.ideavimrc'
 
 # keyrepeat

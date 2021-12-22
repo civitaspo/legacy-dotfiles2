@@ -1,4 +1,0 @@
-[submodule ".secfiles"]
-	path = .secfiles
-	url = git@github.com:civitaspo/.secfiles.git
-
