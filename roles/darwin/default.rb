@@ -1,5 +1,5 @@
 include_role 'base'
-include_cookbook 'homebrew' # install packages from .Brewfile
+include_cookbook 'homebrew'
 
 include_cookbook 'zsh'
 include_cookbook 'starship'
@@ -12,7 +12,6 @@ include_cookbook 'bin'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
-dotfile '.pryrc'
 dotfile '.hammerspoon'
 dotfile '.ideavimrc'
 
