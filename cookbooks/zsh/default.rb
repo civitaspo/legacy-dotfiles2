@@ -1,4 +1,6 @@
-include_recipe '../git/default.rb'
+include_cookbook 'homebrew'
+include_cookbook 'git'
+
 package 'zsh'
 
 directory File.join(ENV['HOME'], '.local')

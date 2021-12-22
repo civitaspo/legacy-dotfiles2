@@ -1,3 +1,5 @@
+include_cookbook 'git'
+
 git File.join(ENV['HOME'], 'sbin') do
-  repository 'https://github.com/civitaspo/sbin.git'
+  repository 'git@github.com:civitaspo/sbin.git'
 end

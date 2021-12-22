@@ -1,3 +1,5 @@
+include_cookbook 'homebrew'
+include_cookbook 'git'
 
 case node[:platform]
 when 'darwin'
