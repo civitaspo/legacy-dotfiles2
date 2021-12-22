@@ -12,6 +12,7 @@ path=( \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
+    /opt/homebrew/share/git-core/contrib/diff-highlight{N-/) \
     /usr/local/opt/coreutils/libexec/gnubin(N-/) \
     /usr/local/opt/gnu-sed/libexec/gnubin(N-/) \
     /usr/local/opt/findutils/libexec/gnubin(N-/) \
