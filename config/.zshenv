@@ -17,8 +17,10 @@ path=( \
     /usr/local/opt/gnu-sed/libexec/gnubin(N-/) \
     /usr/local/opt/findutils/libexec/gnubin(N-/) \
     /usr/local/opt/gnu-tar/libexec/gnubin(N-/) \
+    /opt/homebrew/opt/*/bin(N-/) \
     /usr/local/opt/*/bin(N-/) \
     /usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/bin(N-/) \
+    /usr/sbin(N-/) \
     "$path[@]" \
     )
 
