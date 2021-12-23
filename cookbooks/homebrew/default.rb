@@ -3,6 +3,18 @@ execute "Install Homebrew" do
   not_if "which brew >/dev/null"
 end
 
+[
+  '~/.linuxbrew',
+  '/home/linuxbrew/.linuxbrew',
+  '/opt/homebrew',
+].each do |brew_dir|
+  execute "eval \"$(#{brew_dir}/bin/brew shellenv)\"" do
+    subscribes :run, "execute[Install Homebrew]", :immediately
+    action :nothing
+    only_if "test -d #{brew_dir}"
+  end
+end
+
 dotfile '.Brewfile'
 
 # NOTE: It takes very long time, so execute this manually.
