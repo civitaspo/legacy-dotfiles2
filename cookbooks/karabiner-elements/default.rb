@@ -1,5 +1,5 @@
 include_cookbook 'homebrew'
 
-package 'karabiner-elements'
+cask 'karabiner-elements'
 
 dotfile '.config/karabiner'
