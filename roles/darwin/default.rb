@@ -14,6 +14,7 @@ include_cookbook 'font'
 include_cookbook 'tmux'
 include_cookbook 'asdf'
 include_cookbook 'hammerspoon'
+include_cookbook 'tig'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
