@@ -101,3 +101,27 @@ do
 end
 
 --
+
+do
+  local function activateApp(name)
+    if not hs.application.launchOrFocus(name) then
+      hs.alert(name .. " could not be launched or focused.", 0.5)
+    end
+  end
+
+  hs.hotkey.bind({"cmd"}, "1", function()
+    activateApp("1Password 7")
+  end)
+  hs.hotkey.bind({"cmd"}, "3", function()
+    activateApp("Google Chrome")
+  end)
+  hs.hotkey.bind({"cmd"}, "7", function()
+    activateApp("kitty")
+  end)
+  hs.hotkey.bind({"cmd"}, "9", function()
+    activateApp("Scrapbox")
+  end)
+  hs.hotkey.bind({"cmd"}, "0", function()
+    activateApp("Slack")
+  end)
+end

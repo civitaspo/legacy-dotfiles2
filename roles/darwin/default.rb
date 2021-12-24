@@ -13,10 +13,10 @@ include_cookbook 'kitty'
 include_cookbook 'font'
 include_cookbook 'tmux'
 include_cookbook 'asdf'
+include_cookbook 'hammerspoon'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
-dotfile '.hammerspoon'
 dotfile '.ideavimrc'
 
 # keyrepeat
