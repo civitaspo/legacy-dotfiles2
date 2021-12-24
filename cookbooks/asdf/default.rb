@@ -27,7 +27,6 @@ dotfile '.asdfrc'
   fd
   gcloud
   ghq
-  gitui
   golang
   istioctl
   java
