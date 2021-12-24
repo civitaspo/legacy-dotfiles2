@@ -11,6 +11,7 @@ include_cookbook 'secrets'
 include_cookbook 'bin'
 include_cookbook 'kitty'
 include_cookbook 'font'
+include_cookbook 'tmux'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
