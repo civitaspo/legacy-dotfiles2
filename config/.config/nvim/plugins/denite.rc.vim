@@ -68,6 +68,17 @@ call denite#custom#filter('matcher/ignore_globs', 'ignore_globs',
       \ [ '.git/', '.ropeproject/', '__pycache__/',
       \   'venv/', 'images/', '*.min.*', 'img/', 'fonts/'])
 
+let s:denite_win_width_percent = 0.85
+let s:denite_win_height_percent = 0.7
+
+" Change denite default options
+call denite#custom#option('default', {
+    \ 'split': 'floating',
+    \ 'winwidth': float2nr(&columns * s:denite_win_width_percent),
+    \ 'wincol': float2nr((&columns - (&columns * s:denite_win_width_percent)) / 2),
+    \ 'winheight': float2nr(&lines * s:denite_win_height_percent),
+    \ 'winrow': float2nr((&lines - (&lines * s:denite_win_height_percent)) / 2),
+    \ })
 nnoremap <silent> [Window]<Space>
     \ :<C-u>Denite file/rec:~/.vim/rc<CR>
 nnoremap <silent><expr> / wordcount().chars > 30000 ?
@@ -86,4 +97,54 @@ nnoremap <silent><expr> [Window]s finddir('.git', ';') != '' ?
     \  file/point file/old file file:new\<CR>"
 nnoremap <silent> n
     \ :<C-u>Denite -buffer-name=search -resume<CR>
+
+
+augroup my_denite
+   autocmd!
+   autocmd FileType denite call s:denite_my_settings()
+   autocmd FileType denite-filter call s:denite_filter_my_settings()
+augroup END
+
+function! s:denite_my_settings()
+    nnoremap <silent><buffer><expr> <CR>
+        \ denite#do_map('do_action')
+    nnoremap <silent><buffer><expr> d
+        \ denite#do_map('do_action', 'delete')
+    nnoremap <silent><buffer><expr> p
+        \ denite#do_map('do_action', 'preview')
+    nnoremap <silent><buffer><expr> q
+        \ denite#do_map('quit')
+    nnoremap <silent><buffer><expr> i
+        \ denite#do_map('open_filter_buffer')
+    nnoremap <silent><buffer><expr> <Space>
+        \ denite#do_map('toggle_select').'j'
+    nnoremap <silent><buffer><expr> <C-Space>
+        \ denite#do_map('toggle_select').'j'
+    nnoremap <silent><buffer><expr><nowait> t
+        \ denite#do_map('do_action', 'tabswitch')
+    nnoremap <silent><buffer><expr> a
+        \ denite#do_map('choose_action')
+    nnoremap <silent><buffer><expr> <C-g>
+        \ denite#do_map('echo')
+endfunction
+
+function! s:denite_filter_my_settings() abort
+    augroup ftplugin-my-denite
+        autocmd! * <buffer>
+        autocmd InsertEnter <buffer> imap <silent><buffer> <CR> <ESC><CR><CR>
+        autocmd InsertEnter <buffer> inoremap <silent><buffer> <Esc> <Esc><C-w><C-q>:<C-u>call denite#move_to_parent()<CR>
+    augroup END
+
+    imap <silent><buffer> <Esc> <Esc>:call denite#move_to_parent()<CR>
+    imap <silent><buffer> <C-[> <C-[>:call denite#move_to_parent()<CR>
+    inoremap <silent><buffer> <CR> <Esc>
+        \:call denite#move_to_parent()<CR>
+        \<CR>
+    inoremap <silent><buffer> <C-CR> <Esc>
+        \:call denite#move_to_parent()<CR>
+        \<CR>
+    inoremap <silent><buffer> <C-m> <Esc>
+        \:call denite#move_to_parent()<CR>
+        \<CR>
+endfunction
 

@@ -40,6 +40,7 @@ dotfile '.asdfrc'
   kubectl
   kustomize
   python
+  ripgrep
   ruby
   terraform
   yq
