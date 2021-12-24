@@ -1,3 +1,4 @@
 bin/mitamae*
 /tmp/
 *.swp
+config/.config/karabiner/automatic_backups/
