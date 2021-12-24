@@ -3,6 +3,7 @@ include_cookbook 'homebrew'
 
 include_cookbook 'zsh'
 include_cookbook 'starship'
+include_cookbook 'karabiner-elements'
 include_cookbook 'neovim'
 include_cookbook 'scripts'
 include_cookbook 'sbin'
