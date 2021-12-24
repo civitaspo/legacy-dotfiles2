@@ -17,10 +17,10 @@ end
 
 dotfile '.Brewfile'
 
-define :cask, source: nil do
-  source = params[:source] || params[:name]
-  package source do
-    not_if "ls -1 $(brew --prefix)/Caskroom | grep '^#{source}$'"
+define :cask do
+  name = params[:name]
+  package name do
+    not_if "ls -1 $(brew --prefix)/Caskroom | grep '^#{name}$'"
   end
 end
 

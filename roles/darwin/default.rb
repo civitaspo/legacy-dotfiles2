@@ -12,6 +12,7 @@ include_cookbook 'bin'
 include_cookbook 'kitty'
 include_cookbook 'font'
 include_cookbook 'tmux'
+include_cookbook 'asdf'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
