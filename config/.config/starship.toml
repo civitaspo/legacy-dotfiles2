@@ -10,15 +10,10 @@ discharging_symbol = "💀"
 
 [cmd_duration]
 min_time = 500  # milliseconds
-prefix = "⏳ "
+format = "⏳[$duration]($style)"
 
 [git_branch]
 symbol = "🌵 "
-
-[git_commit]
-disabled = false
-prefix = "🔗 "
-suffix = " "
 
 [kubernetes]
 symbol = "⛵ "
