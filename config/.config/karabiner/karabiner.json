@@ -48,6 +48,36 @@
                         ]
                     },
                     {
+                        "description": "Change Command+Tab to Command+Option+Shift+Control+Tab",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "tab",
+                                    "modifiers": {
+                                        "mandatory": [
+                                            "command"
+                                        ],
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "tab",
+                                        "modifiers": [
+                                            "command",
+                                            "option",
+                                            "shift",
+                                            "control"
+                                        ]
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
                         "description": "Change Left_control P/N/B/F to Arrow Keys In Firefox",
                         "manipulators": [
                             {
