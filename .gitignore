@@ -2,3 +2,4 @@ bin/mitamae*
 /tmp/
 *.swp
 config/.config/karabiner/automatic_backups/
+config/.config/kitty/kitty-themes/

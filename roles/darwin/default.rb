@@ -9,6 +9,8 @@ include_cookbook 'scripts'
 include_cookbook 'sbin'
 include_cookbook 'secrets'
 include_cookbook 'bin'
+include_cookbook 'kitty'
+include_cookbook 'font'
 
 # packages which require only dotfiles.
 # installed by `brew cask`
