@@ -49,6 +49,7 @@ brew "parquet-tools"
 brew "protobuf"
 brew "pstree"
 brew "starship"
+brew "tig"
 brew "tmux"
 brew "tree"
 brew "watch"
@@ -63,11 +64,13 @@ cask "hammerspoon"
 cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "kitty"
+cask "raindropio"
 mas "1Password 7", id: 1333542190
 mas "Fantastical", id: 975937182
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
+mas "MindNode", id: 1289197285
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Slack", id: 803453959
