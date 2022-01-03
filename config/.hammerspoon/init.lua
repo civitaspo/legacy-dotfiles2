@@ -104,19 +104,34 @@ end
 
 do
   local function activateApp(name)
-    if not hs.application.launchOrFocus(name) then
+    if not hs.application.launchOrFocus(name) and not hs.application.launchOrFocusByBundleID(name) then
       hs.alert(name .. " could not be launched or focused.", 0.5)
     end
   end
 
   hs.hotkey.bind({"cmd"}, "1", function()
-    activateApp("1Password 7")
+    activateApp("io.raindrop.macapp")
+  end)
+  hs.hotkey.bind({"cmd"}, "2", function()
+    activateApp("Fantastical")
   end)
   hs.hotkey.bind({"cmd"}, "3", function()
     activateApp("Google Chrome")
   end)
+  hs.hotkey.bind({"cmd"}, "4", function()
+    activateApp("Reminders")
+  end)
+  hs.hotkey.bind({"cmd"}, "5", function()
+    activateApp("Spark")
+  end)
+  hs.hotkey.bind({"cmd"}, "6", function()
+    activateApp("Notion")
+  end)
   hs.hotkey.bind({"cmd"}, "7", function()
     activateApp("kitty")
+  end)
+  hs.hotkey.bind({"cmd"}, "8", function()
+    activateApp("Intellij IDEA")
   end)
   hs.hotkey.bind({"cmd"}, "9", function()
     activateApp("Scrapbox")
