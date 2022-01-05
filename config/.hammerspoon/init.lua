@@ -125,7 +125,7 @@ do
     activateApp("Spark")
   end)
   hs.hotkey.bind({"cmd"}, "6", function()
-    activateApp("Notion")
+    activateApp("Notes")
   end)
   hs.hotkey.bind({"cmd"}, "7", function()
     activateApp("kitty")
