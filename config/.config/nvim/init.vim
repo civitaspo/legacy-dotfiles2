@@ -48,26 +48,6 @@ endif
 let g:loaded_python_provider = 0
 let g:python3_host_prog = expand('~/.asdf/shims/python')
 
-syntax on
-set hlsearch
-set nowrapscan
-set nonumber
-set showmatch " emphasize brackets pair
-set wrap
-set autoindent
-set showcmd
-set hidden
-set noswapfile
-set nobackup
-set backspace=indent,eol,start
-set ruler
-set clipboard+=unnamedplus
-set cursorline
-set tabstop=2 shiftwidth=2 expandtab
-highlight CursorLine cterm=underline ctermbg=235
-set cursorcolumn
-highlight CursorColumn ctermbg=235
-
 filetype on
 filetype indent on
 filetype plugin on
@@ -99,17 +79,4 @@ au BufNewFile,BufRead *.psgi      set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead *.sh        set tabstop=4 shiftwidth=4 expandtab
 au BufNewFile,BufRead Dockerfile  set tabstop=4 shiftwidth=4 expandtab
 
-nmap <C-c> :q<CR>
-nmap <C-x> :wq<CR>
-nnoremap <C-f>        <Right>
-inoremap <C-f>        <Right>
-vnoremap <C-f>        <Right>
-nnoremap <C-b>        <Left>
-inoremap <C-b>        <Left>
-vnoremap <C-b>        <Left>
-inoremap <C-a>        <Home>
-nnoremap <C-a>        <Home>
-inoremap <C-e>        <End>
-nnoremap <C-e>        <End>
-inoremap <C-p>        <Up>
-inoremap <C-n>        <Down>
+source ~/.config/nvim/share.vim

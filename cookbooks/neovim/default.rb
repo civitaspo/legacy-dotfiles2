@@ -2,12 +2,7 @@ include_cookbook 'homebrew'
 
 package 'neovim'
 
-directory File.join(ENV['HOME'], '.config', 'nvim')
-
-dotfile '.config/nvim/init.vim'
-dotfile '.config/nvim/dein.toml'
-dotfile '.config/nvim/deinlazy.toml'
-dotfile '.config/nvim/plugins'
+dotfile '.config/nvim'
 
 # execute 'env PYTHON_CONFIGURE_OPTS="--enable-framework" pyenv install 3.7.7' do
 #   not_if "test -f #{File.join(ENV['HOME'], '.pyenv/versions/3.7.7/bin/python')}"

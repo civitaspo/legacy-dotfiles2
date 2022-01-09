@@ -17,8 +17,7 @@ include_cookbook 'hammerspoon'
 include_cookbook 'tig'
 
 # packages which require only dotfiles.
-# installed by `brew cask`
-dotfile '.ideavimrc'
+dotfile '.ideavimrc'  # installed by JetBrains All Product Pack
 
 # keyrepeat
 execute "defaults write -g InitialKeyRepeat -int 15" do
