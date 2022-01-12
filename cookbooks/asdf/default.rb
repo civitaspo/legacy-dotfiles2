@@ -1,3 +1,4 @@
+include_cookbook 'homebrew'
 package 'asdf'
 
 define :asdf_plugin, url: nil do
@@ -34,10 +35,8 @@ dotfile '.asdfrc'
   kind
   ko
   kotlin
-  krew
   kubebuilder
-  kubectl
-  kustomize
+  opa
   python
   ripgrep
   ruby

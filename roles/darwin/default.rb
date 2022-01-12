@@ -16,6 +16,7 @@ include_cookbook 'asdf'
 include_cookbook 'hammerspoon'
 include_cookbook 'tig'
 include_cookbook 'docker'
+include_cookbook 'kubectl'
 
 # packages which require only dotfiles.
 dotfile '.ideavimrc'  # installed by JetBrains All Product Pack

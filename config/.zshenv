@@ -8,6 +8,7 @@ path=( \
     ~/.tmux/bin(N-/) \
     ~/.cargo/bin(N-/) \
     ~/.krew/bin(N-/) \
+    ~/.asdf/installs/krew/*/bin(N-/) \
     ~/go/*/bin(N-/) \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
