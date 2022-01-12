@@ -69,6 +69,7 @@ cask "karabiner-elements"
 cask "kitty"
 cask "raindropio"
 cask "tandem"
+cask "visual-studio-code"
 mas "1Password 7", id: 1333542190
 mas "Fantastical", id: 975937182
 mas "feedly", id: 865500966

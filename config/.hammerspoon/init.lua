@@ -132,7 +132,7 @@ do
     activateApp("kitty")
   end)
   hs.hotkey.bind({"cmd"}, "8", function()
-    activateApp("Intellij IDEA")
+    activateApp("Visual Studio Code")
   end)
   hs.hotkey.bind({"cmd"}, "9", function()
     activateApp("Scrapbox")
