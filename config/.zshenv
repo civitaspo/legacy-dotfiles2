@@ -109,4 +109,7 @@ export FZF_DEFAULT_OPTS="--reverse --extended --ansi --multi"
 # available $INTERACTIVE_FILTER
 export INTERACTIVE_FILTER="fzf-tmux:fzf:peco"
 
+# https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
+export GPG_TTY=$(tty)
+
 [[ -f ~/.secret-env.sh ]] && source ~/.secret-env.sh
