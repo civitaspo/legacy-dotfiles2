@@ -36,6 +36,7 @@ dotfile '.asdfrc'
   ko
   kotlin
   kubebuilder
+  nodejs
   opa
   python
   ripgrep

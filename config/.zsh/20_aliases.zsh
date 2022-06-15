@@ -43,7 +43,7 @@ alias hosts='cat /private/etc/hosts F'
 if has 'git'; then
     alias gst='git status -sb'
     alias ga='git add'
-    alias gc='git commit'
+    alias gc='git commit -s -S'
     alias gsw='git switch'
     alias grs='git restore'
     alias gb='git branch'

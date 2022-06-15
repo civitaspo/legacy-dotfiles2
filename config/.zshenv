@@ -8,7 +8,6 @@ path=( \
     ~/.tmux/bin(N-/) \
     ~/.cargo/bin(N-/) \
     ~/.krew/bin(N-/) \
-    ~/.asdf/installs/krew/*/bin(N-/) \
     ~/go/*/bin(N-/) \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
@@ -55,7 +54,7 @@ export LC_ALL="${LANGUAGE}"
 export LC_CTYPE="${LANGUAGE}"
 
 # Editor
-export EDITOR="nvim"
+export EDITOR="code --wait"
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
