@@ -9,11 +9,6 @@ tap "homebrew/core"
 tap "homebrew/services"
 tap "minamijoyo/hcledit"
 tap "neovim/neovim"
-brew "autoconf"
-brew "automake"
-brew "coreutils"
-brew "libtool"
-brew "libyaml"
 brew "asdf"
 brew "avrdude"
 brew "cmake"
@@ -79,22 +74,17 @@ cask "font-hackgen-nerd"
 cask "google-chrome"
 cask "hammerspoon"
 cask "jasper"
-cask "jetbrains-toolbox"
 cask "karabiner-elements"
 cask "kitty"
 cask "obs"
 cask "obsidian"
 cask "raindropio"
 cask "raycast"
-cask "thingsmacsandboxhelper"
 cask "visual-studio-code"
 mas "feedly", id: 865500966
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
-mas "Keynote", id: 409183694
 mas "LINE", id: 539883307
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Paste", id: 967805235
-mas "Slack", id: 803453959
-mas "Things", id: 904280696

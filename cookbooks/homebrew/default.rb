@@ -24,6 +24,13 @@ define :cask do
   end
 end
 
+define :tap do
+  name = params[:name]
+  execute "brew tap #{name}" do
+    not_if "brew tap | grep '^#{name}$'"
+  end
+end
+
 
 # NOTE: It takes very long time, so execute this manually.
 # execute "HOMEBREW_FORCE_BREWED_CURL=1 brew bundle --global" do
