@@ -3,3 +3,4 @@ bin/mitamae*
 *.swp
 config/.config/karabiner/automatic_backups/
 config/.config/kitty/kitty-themes/
+config/.config/nvim/lua/plugins

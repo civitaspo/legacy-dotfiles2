@@ -1,5 +1,5 @@
 [user]
-	name = civitaspo
+	name = Takahiro Nakayama
 	email = civitaspo@gmail.com
   # ref. https://docs.github.com/en/authentication/managing-commit-signature-verification/telling-git-about-your-signing-key
   # gpg --list-secret-keys --keyid-format=long
@@ -22,6 +22,9 @@
 [merge]
 	# from 1.7.6
 	ff = false
+  tool = code
+[mergetool "code"]
+  cmd = code-insiders --wait --merge $REMOTE $LOCAL $BASE $MERGED
 [pull]
 	# from 1.7.9
 	rebase = merges
@@ -51,3 +54,8 @@
   path = .gitconfig.secret
 [commit]
 	gpgsign = true
+[http]
+	postBuffer = 1M
+[url "ssh://git@github.com/LayerXcom/layerone.git"]
+	insteadOf = https://github.com/LayerXcom/layerone.git
+

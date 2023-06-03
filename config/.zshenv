@@ -54,7 +54,7 @@ export LC_ALL="${LANGUAGE}"
 export LC_CTYPE="${LANGUAGE}"
 
 # Editor
-export EDITOR="code --wait"
+export EDITOR="code-insiders --wait"
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
@@ -110,5 +110,8 @@ export INTERACTIVE_FILTER="fzf-tmux:fzf:peco"
 
 # https://docs.github.com/en/authentication/managing-commit-signature-verification/generating-a-new-gpg-key
 export GPG_TTY=$(tty)
+
+# https://github.com/b4b4r07/enhancd/issues/118
+export ENHANCD_COMPLETION_BEHAVIOR=list
 
 [[ -f ~/.secret-env.sh ]] && source ~/.secret-env.sh

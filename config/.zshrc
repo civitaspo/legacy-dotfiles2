@@ -16,11 +16,11 @@ if [[ -f "${ZINIT_HOME}/zinit.zsh" ]]; then
     for f in $(ls ~/.zsh/*.zsh); do
         zinit snippet $f
     done
-    zinit light zdharma-continuum/fast-syntax-highlighting
-    zinit light zsh-users/zsh-completions
-    zinit light zsh-users/zsh-autosuggestions
-    zinit light b4b4r07/emoji-cli
-    zinit light b4b4r07/enhancd
+    zinit load zdharma-continuum/fast-syntax-highlighting
+    zinit load zsh-users/zsh-completions
+    zinit load zsh-users/zsh-autosuggestions
+    zinit load b4b4r07/emoji-cli
+    zinit load b4b4r07/enhancd
 fi
 
 # Entirety of my startup file... then

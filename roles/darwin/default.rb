@@ -39,3 +39,7 @@ end
 execute "defaults write -g ApplePressAndHoldEnabled -bool false" do
   not_if "[ $(defaults read -g ApplePressAndHoldEnabled ) -eq 0 ]"
 end
+
+execute "defaults write NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled -bool false" do
+  not_if "[ $(defaults read NSGlobalDomain NSAutomaticPeriodSubstitutionEnabled) -eq 0 ]"
+end

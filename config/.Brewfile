@@ -63,10 +63,11 @@ brew "zip"
 brew "zlib"
 brew "zsh"
 brew "argoproj/tap/kubectl-argo-rollouts"
-brew "minamijoyo/hcledit/hcledit"
 cask "1password"
 cask "atok"
+cask "aws-vpn-client"
 cask "bdash"
+cask "centered"
 cask "discord"
 cask "docker"
 cask "font-hackgen"
@@ -76,15 +77,11 @@ cask "hammerspoon"
 cask "jasper"
 cask "karabiner-elements"
 cask "kitty"
+cask "monitorcontrol"
 cask "obs"
 cask "obsidian"
 cask "raindropio"
 cask "raycast"
+cask "session-manager-plugin"
 cask "visual-studio-code"
-mas "feedly", id: 865500966
-mas "GarageBand", id: 682658836
-mas "iMovie", id: 408981434
-mas "LINE", id: 539883307
-mas "Numbers", id: 409203825
-mas "Pages", id: 409201541
-mas "Paste", id: 967805235
+cask "zoom"

@@ -50,7 +50,7 @@ if has 'git'; then
     if has 'fzf-tmux'; then
         fzf_local_branches() {
             local branches branch
-            branches=$(git branch -a) &&
+            branches=$(git branch) &&
             branch=$(echo "$branches" | fzf-tmux +m) &&
             echo "$branch" | sed "s/.* //"
         }
@@ -104,4 +104,8 @@ fi
 if has 'kubectl'; then
     alias k='kubectl'
     alias kpo='kubectl get po -A -o wide | fzf'
+fi
+
+if has 'aws'; then
+    alias aws-sso-login='aws sso login --profile $(aws configure list-profiles | fzf)'
 fi

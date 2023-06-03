@@ -52,3 +52,6 @@ function gx() {
   gcloud-activate "${name}" "${project}"
 }
 compdef gx-complete gx
+
+# 1Password CLI
+source $HOME/.config/op/plugins.sh

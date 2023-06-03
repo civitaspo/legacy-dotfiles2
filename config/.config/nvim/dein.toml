@@ -1,9 +1,0 @@
-[[plugins]]
-repo = 'Shougo/dein.vim'
-
-[[plugins]] # colorscheme
-repo = 'kristijanhusak/vim-hybrid-material'
-hook_add = 'source ~/.config/nvim/plugins/vim-hybrid.rc.vim'
-
-[[plugins]]
-repo = 'tpope/vim-endwise'
