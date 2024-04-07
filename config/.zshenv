@@ -9,6 +9,8 @@ path=( \
     ~/.cargo/bin(N-/) \
     ~/.krew/bin(N-/) \
     ~/go/*/bin(N-/) \
+    ~/.cargo/bin(N-/) \
+    ~/.local/share/aquaproj-aqua/bin(N-/) \
     /usr/local/bin(N-/) \
     /usr/local/sbin(N-/) \
     /usr/local/share/git-core/contrib/diff-highlight(N-/) \
@@ -54,7 +56,7 @@ export LC_ALL="${LANGUAGE}"
 export LC_CTYPE="${LANGUAGE}"
 
 # Editor
-export EDITOR="code-insiders --wait"
+export EDITOR="code --wait"
 export CVSEDITOR="${EDITOR}"
 export SVN_EDITOR="${EDITOR}"
 export GIT_EDITOR="${EDITOR}"
@@ -115,3 +117,4 @@ export GPG_TTY=$(tty)
 export ENHANCD_COMPLETION_BEHAVIOR=list
 
 [[ -f ~/.secret-env.sh ]] && source ~/.secret-env.sh
+. "$HOME/.cargo/env"

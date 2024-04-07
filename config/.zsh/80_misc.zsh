@@ -53,5 +53,16 @@ function gx() {
 }
 compdef gx-complete gx
 
+# gh custom
+function gh-workflow-open() {
+  gh repo view --json name,owner --jq '.owner.login + "/" + .name' \
+    | xargs -I{} gh api /repos/{}/actions/workflows --paginate --jq '.workflows[] | {name: .name, path: .path}' \
+    | jq -c \
+    | fzf \
+    | jq -cr '.path' \
+    | cut -d/ -f3 \
+    | xargs -I{} gh workflow view {} -w
+}
+
 # 1Password CLI
 source $HOME/.config/op/plugins.sh

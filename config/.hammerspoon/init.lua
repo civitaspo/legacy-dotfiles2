@@ -16,7 +16,6 @@ do
   pathWatcher:start()
 end
 
-
 --
 -- ContinuousWriting Support
 --   ref. http://blog.gururimichi.com/entry/2017/08/28/190030
@@ -37,12 +36,12 @@ end
 --       hs.notify.show("Hammerspoon", "No Key Stroke Event", "During " .. noStrokeMins .." mins"):send()
 --     end
 --   end)
--- 
+--
 --   local eventtap = hs.eventtap.new({ hs.eventtap.event.types.keyDown }, function(event)
 --     isStroked = true
 --     return false
 --   end)
--- 
+--
 --   local function startContinuousWriting()
 --     if not timer:running() then
 --       timer:start()
@@ -51,7 +50,7 @@ end
 --       eventtap:start()
 --     end
 --   end
--- 
+--
 --   local function stopContinuousWriting()
 --     if timer:running() then
 --       timer:stop()
@@ -60,7 +59,7 @@ end
 --       eventtap:stop()
 --     end
 --   end
--- 
+--
 --   local function conditionalSwitchContinuousWriting(eventType)
 --     if eventType == hs.caffeinate.watcher.screensaverDidStart then
 --       print("-- stopContinuousWriting: hs.caffeinate.watcher.screensaverDidStart")
@@ -93,9 +92,9 @@ end
 --       print("-- Do nothing about ContinuousWriting: " .. eventType)
 --     end
 --   end
--- 
+--
 --   startContinuousWriting()
--- 
+--
 --   -- Use Global Variables for preventing GC
 --   caffeinateWatcher = hs.caffeinate.watcher.new(conditionalSwitchContinuousWriting)
 --   caffeinateWatcher:start()
@@ -110,34 +109,34 @@ do
     end
   end
 
-  hs.hotkey.bind({"cmd"}, "1", function()
-    activateApp("1Password")
-  end)
-  hs.hotkey.bind({"cmd"}, "2", function()
-    activateApp("ChatGPT")
-  end)
-  hs.hotkey.bind({"cmd"}, "3", function()
-    activateApp("Google Chrome")
-  end)
-  hs.hotkey.bind({"cmd"}, "4", function()
-    activateApp("HEY")
-  end)
-  hs.hotkey.bind({"cmd"}, "5", function()
-    activateApp("Slack")
-  end)
-  hs.hotkey.bind({"cmd"}, "6", function()
-    activateApp("zoom.us")
-  end)
-  hs.hotkey.bind({"cmd"}, "7", function()
-    activateApp("kitty")
-  end)
-  hs.hotkey.bind({"cmd"}, "8", function()
-    activateApp("Visual Studio Code - Insiders")
-  end)
-  hs.hotkey.bind({"cmd"}, "9", function()
-    activateApp("Hepta")
-  end)
-  hs.hotkey.bind({"cmd"}, "0", function()
-    activateApp("Gmail")
-  end)
+  -- hs.hotkey.bind({"cmd"}, "1", function()
+  --   activateApp("1Password")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "2", function()
+  --   activateApp("ChatGPT")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "3", function()
+  --   activateApp("Arc")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "4", function()
+  --   activateApp("Scrapbox")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "5", function()
+  --   activateApp("Slack")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "6", function()
+  --   activateApp("bakuraku | gather")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "7", function()
+  --   activateApp("kitty")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "8", function()
+  --   activateApp("Visual Studio Code - Insiders")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "9", function()
+  --   activateApp("Todoist")
+  -- end)
+  -- hs.hotkey.bind({"cmd"}, "0", function()
+  --   activateApp("Gmail")
+  -- end)
 end

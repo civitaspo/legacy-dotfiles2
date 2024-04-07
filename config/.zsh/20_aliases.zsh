@@ -88,7 +88,7 @@ if has 'git'; then
                         echo '{}' | grep -o '[a-f0-9]\{7\}' | head -1 |
                         xargs -I % sh -c 'git show --color=always % | less -R'"
         }
-        
+
     fi
     if has 'perl'; then
         delete_git_merged_branch() {
@@ -98,6 +98,16 @@ if has 'git'; then
                 | xargs git branch -d
         }
         alias gbdm=delete_git_merged_branch
+    fi
+fi
+if has 'gh'; then
+    if has 'fzf-tmux'; then
+        fzf_pr_number() {
+            local pr_number
+            pr_number=$(gh pr list --limit 100 | fzf-tmux +m | awk '{print $1}') &&
+            echo "$pr_number"
+        }
+        alias ghc='gh pr checkout $(fzf_pr_number)'
     fi
 fi
 
